@@ -8,13 +8,20 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="—title: 四月一日总结date: 2019-04-01 21:12:33 tags:###四月好好学习 四月是你的谎言 四月开始减肥  四月好好锻炼! #JSP &amp;amp; EL &amp;amp; JSTL #jsp  Java Server Page    什么是jsp   从用户角度看待 ，就是是一个网页 ， 从程序员角度看待 ， 其实是一个java类， 它继承了servlet，所以可以">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/04/01/四月一日总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="—title: 四月一日总结date: 2019-04-01 21:12:33 tags:###四月好好学习 四月是你的谎言 四月开始减肥  四月好好锻炼! #JSP &amp;amp; EL &amp;amp; JSTL #jsp  Java Server Page    什么是jsp   从用户角度看待 ，就是是一个网页 ， 从程序员角度看待 ， 其实是一个java类， 它继承了servlet，所以可以">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/04/01/四月一日总结/img/img01.png">
+<meta property="og:image" content="http://yoursite.com/2019/04/01/四月一日总结/img/img02.png">
+<meta property="og:updated_time" content="2019-04-01T13:14:08.612Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="—title: 四月一日总结date: 2019-04-01 21:12:33 tags:###四月好好学习 四月是你的谎言 四月开始减肥  四月好好锻炼! #JSP &amp;amp; EL &amp;amp; JSTL #jsp  Java Server Page    什么是jsp   从用户角度看待 ，就是是一个网页 ， 从程序员角度看待 ， 其实是一个java类， 它继承了servlet，所以可以">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/01/四月一日总结/img/img01.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,390 +157,696 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-jdbc和html学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-四月一日总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿—<br>title: jdbc和html学习<br>date: 2019-03-25 21:08:07</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h2 id="数据表操作"><a href="#数据表操作" class="headerlink" title="数据表操作"></a>数据表操作</h2><h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><ol>
-<li>创建表—使用默认的字符集与校对                create table 表名(<pre><code>    字段1 类型，
-    字段2 类型,
-    .....
-);
-</code></pre></li>
-<li>创建表–指定字符集与校对                create table 表名(<pre><code>    字段1 类型，
-    字段2 类型,
-    .....
-) character set 字符集  collate 校对;
-</code></pre><h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3></li>
-</ol>
-<ol>
-<li>主键约束1.在创建表时，在字段后面加上  primary key.<pre><code>create table tablename(                        
-    id int primary key,
-    .......
-)
-</code></pre>2.也可以表创建的最后来指定主键                                                                create table tablename(                        <pre><code>id int，
-.......
-primary key(id)
-</code></pre>)<br>3.删除主键：alter table tablename drop primary key ;</li>
-</ol>
-<ol>
-<li><p>唯一约束 某一列的值不为重复可以使用唯一约束.    unique</p>
-</li>
-<li><p>非空约束 not null</p>
-</li>
-<li><p>默认值约束 default 值</p>
-</li>
-<li><p>外键约束</p>
-</li>
-<li><p>自动增长  auto_increment</p>
-</li>
-</ol>
-<h2 id="查看修改删除表"><a href="#查看修改删除表" class="headerlink" title="查看修改删除表"></a>查看修改删除表</h2><p>###查看表</p>
-<ol>
-<li>查看表结构 desc 表名;    </li>
-<li>查看当前数据库下所有表 show tables;</li>
-<li>查看表的字符编码集 show create table 表名;    </li>
-</ol>
-<h3 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h3><ol>
-<li>修改表的结构语法格式:alter table 表名 关键字 ….;</li>
-<li>修改表的名称 rename table 旧表名 to 新表名;</li>
-<li>修改表的字符编码集 alter table 表名 character set 字符集;</li>
-</ol>
-<p>###删除表<br>drop table 表名;</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/25/jdbc和html学习/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-数据库学习1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿—</p>
-<h2 id="title-SQL"><a href="#title-SQL" class="headerlink" title="title: SQL"></a>title: SQL</h2><p>数据库就是存储数据的仓库，其本质是一个文件系统，数据按照特定的格式将数据存储起来，用户可以对数据库中的数据进行增加，修改，删除及查询操作</p>
-<h2 id="SQL介绍"><a href="#SQL介绍" class="headerlink" title="SQL介绍"></a>SQL介绍</h2><h3 id="常见数据库"><a href="#常见数据库" class="headerlink" title="常见数据库"></a>常见数据库</h3><ol>
-<li>Oracle数据库：Oracle是殷墟（yīn Xu）出土的甲骨文（oracle bone inscriptions）的英文翻译的第一个单词，在英语里是“神谕”的意思，由Larry Ellison 和另两个编程人员在1977创办，他们开发了自己的拳头产品，在市场上大量销售，1979 年，Oracle公司引入了第一个商用SQL 关系数据库管理系统。Oracle公司是最早开发关系数据库的厂商之一，其产品支持最广泛的操作系统平台。目前Oracle关系数据库产品的市场占有率名列前茅。</li>
-<li>SQL Server数据库：1987 年，微软和 IBM合作开发完成OS/2，IBM 在其销售的OS/2 ExtendedEdition 系统中绑定了OS/2Database Manager，而微软产品线中尚缺少数据库产品。为此，微软将目光投向Sybase，同Sybase 签订了合作协议，使用Sybase的技术开发基于OS/2平台的关系型数据库。1989年，微软发布了SQL Server 1.0 版。</li>
-<li>Sybase数据库：  Sybase公司成立于1984年，公司名称“Sybase”取自“system”和 “database” 相结合的含义。Sybase公司的创始人之一Bob Epstein 是Ingres 大学版（与System/R同时期的关系数据库模型产品）的主要设计人员。公司的第一个关系数据库产品是1987年5月推出的Sybase SQLServer1.0。Sybase首先提出Client/Server 数据库体系结构的思想，并率先在Sybase SQLServer 中实现。</li>
-<li>MySQL数据：  mySQL是一个小型关系型数据库管理系统，开发者为瑞典MySQL AB公司。在2008年1月16号被Sun公司收购。而2009年，Sun公司又被Oracle公司收购。目前MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库</li>
-<li>DB2数据库：  作为关系数据库领域的开拓者和领航人，IBM在1997年完成了System R系统的原型，1980年开始提供集成的数据库服务器—— System/38，随后是SQL/DSforVSE和VM，其初始版本与SystemR研究原型密切相关。DB2 forMVSV1 在1983年推出。该版本的目标是提供这一新方案所承诺的简单性，数据不相关性和用户生产率。1988年DB2 for MVS 提供了强大的在线事务处理（OLTP）支持，1989 年和1993 年分别以远程工作单元和分布式工作单元实现了分布式数据库支持。最近推出的DB2 Universal Database 6.1则是通用数据库的典范，是第一个具备网上功能的多媒体关系数据库管理系统，支持包括Linux在内的一系列平台。</li>
-</ol>
-<h3 id="关系型数据库"><a href="#关系型数据库" class="headerlink" title="关系型数据库"></a>关系型数据库</h3><p>关系数据库，是建立在关系模型基础上的数据库，借助于集合代数等数学概念和方法来处理数据库中的数据。数据库发展历程如下所示：</p>
+        <p>﻿﻿﻿—<br>title: 四月一日总结<br>date: 2019-04-01 21:12:33</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>###四月好好学习 四月是你的谎言 四月开始减肥  四月好好锻炼!</p>
+<p>#JSP &amp; EL &amp; JSTL</p>
+<p>#jsp</p>
+<blockquote>
+<p>Java Server Page </p>
+</blockquote>
 <ul>
-<li>没有数据库，使用磁盘文件存储数据；</li>
-<li>层次结构模型数据库；</li>
-<li>网状结构模型数据库</li>
-<li>关系结构模型数据库，使用二维表格来存储数据；</li>
-<li>关系-对象模型数据库</li>
+<li>什么是jsp</li>
 </ul>
-<h3 id="SQL介绍-1"><a href="#SQL介绍-1" class="headerlink" title="SQL介绍"></a>SQL介绍</h3><p>##SQL是什么，它的作用是什么<br>结构化查询语言(Structured Query Language)简称SQL，是一种数据库查询和程序设计语言，用于存取数据以及查询、更新和管理关系数据库系统</p>
-<p>##SQL分类</p>
+<blockquote>
+<p>从用户角度看待 ，就是是一个网页 ， 从程序员角度看待 ， 其实是一个java类， 它继承了servlet，所以可以直接说jsp 就是一个Servlet.</p>
+</blockquote>
 <ul>
-<li>数据定义语言：简称DDL(Data Definition Language)，用来定义数据库对象：数据库，表，列等，例如创建、删除、修改：数据库、表结构等</li>
-<li>数据操作语言：简称DML(Data Manipulation Language)，用来对数据库中表的记录进行更新，例如：增、删、改表记录</li>
-<li>数据控制语言：简称DCL(Data Control Language)，用来定义数据库的访问权限和安全级别，及创建用户</li>
-<li>数据查询语言：简称DQL(Data Query Language)，用来查询数据库中表的记录</li>
+<li>为什么会有jsp?</li>
 </ul>
-<p>##SQL语法</p>
+<blockquote>
+<p>html 多数情况下用来显示静态内容 ， 一成不变的。 但是有时候我们需要在网页上显示一些动态数据， 比如： 查询所有的学生信息， 根据姓名去查询具体某个学生。  这些动作都需要去查询数据库，然后在网页上显示。 html是不支持写java代码  ， jsp里面可以写java代码。 </p>
+</blockquote>
+<h2 id="怎么用JSP"><a href="#怎么用JSP" class="headerlink" title="怎么用JSP"></a>怎么用JSP</h2><p>###指令写法</p>
+<p>&lt;%@ 指令名字 %&gt;</p>
+<h3 id="page指令"><a href="#page指令" class="headerlink" title="page指令"></a>page指令</h3><ul>
+<li>language</li>
+</ul>
+<blockquote>
+<p>表明jsp页面中可以写java代码</p>
+</blockquote>
 <ul>
-<li>SQL语句可以单行或多行书写，以分号结尾</li>
-<li>可使用空格和缩进来增强语句的可读性</li>
-<li>MySQL数据库的SQL语句不区分大小写，建议使用大写，例如：SELECT * FROM user</li>
+<li>contentType</li>
 </ul>
-<p>##创建数据库</p>
-<ol>
-<li>使用默认的字符集与校对create database 数据库名;</li>
-<li>可以指定数据库字符create database 数据库名  CHARACTER  set gbk;</li>
-</ol>
+<blockquote>
+<p>其实即使说这个文件是什么类型，告诉浏览器我是什么内容类型，以及使用什么编码</p>
+</blockquote>
+<pre><code>contentType=&quot;text/html; charset=UTF-8&quot;
+
+text/html  MIMEType 这是一个文本，html网页
+</code></pre><ul>
+<li><p>pageEncoding  jsp内容编码</p>
+</li>
+<li><p>extends 用于指定jsp翻译成java文件后，继承的父类是谁，一般不用改。</p>
+</li>
+<li><p>import 导包使用的，一般不用手写。</p>
+</li>
+<li><p>session </p>
+</li>
+</ul>
+<blockquote>
+<p>值可选的有true or false .</p>
+</blockquote>
+<blockquote>
+<p>用于控制在这个jsp页面里面，能够直接使用session对象。</p>
+</blockquote>
+<blockquote>
+<p>具体的区别是，请看翻译后的java文件   如果该值是true , 那么在代码里面会有getSession（）的调用，如果是false :  那么就不会有该方法调用，也就是没有session对象了。在页面上自然也就不能使用session了。</p>
+</blockquote>
 <ul>
-<li>可以指定数据库字符与校对create database 数据库名 character set 编码 COLLATE 校对</li>
+<li>errorPage</li>
 </ul>
-<p>##查看数据库</p>
-<ol>
-<li>查看当前数据库服务器下所有数据库show databases;</li>
-<li>查看创建数据库的语句show create database 数据库名;<br>##修改数据库</li>
-<li>alter database 数据库名称  character set 编码 collate 校对<br>##删除数据库</li>
-<li>drop database 数据库名<br>##其它关于库的操作</li>
-<li>切换数据库:   use 数据库名称</li>
-<li>查看当前所使用的事数据库:  select database();</li>
-</ol>
-<p>More info:SQL</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/24/数据库学习1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-今日份的总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>﻿﻿﻿﻿﻿﻿—</p>
-<h2 id="title-今日份的总结"><a href="#title-今日份的总结" class="headerlink" title="title: 今日份的总结"></a>title: 今日份的总结</h2><p>今天在看了Java核心技术卷1后,终于看不下去了，放弃改看数据库方面的知识。总结Java核心技术的感觉就是视频资料中的内容属于精简出核心内容，通过系统的阅读书籍可以让我有更深的理解，对Java有一个深层次的认识，我深知之不是一朝一夕能理解透的，所以将Java和信心技术先搁置留作查阅资料，转而开始攻克数据库JDBC部分。</p>
-<h2 id="Java核心技术卷1"><a href="#Java核心技术卷1" class="headerlink" title="Java核心技术卷1"></a>Java核心技术卷1</h2><ul>
-<li>二分查找  Collections类的binarySearch，集和必须是排好序的  如果binarySearch方法返回数值大于等于0，表示匹配对象的索引  如果返回负值，表示没有匹配的元素  但可以利用返回值插入元素，使集和保持有序性——&gt;插入位置：-i-1(i&lt;0)。</li>
-<li>数组——&gt;集和 Arrays.asList  集和——&gt;数组 toArray toArray方法返回的数组是一个Object[]数组，不能改变它的类型  例：  String[] values = …;  HashSet<string> staff = new HashSet(Array.asList(values));  Object[] values = staff.toArray();  String[] values = staff.toArray(new String[0]);  staff.toArray(new string[staff.size()]);——&gt;不会创建新数组</string></li>
-<li>如果编写自己的以集和作为参数的任何方法，应该尽可能地使用接口，而不要使用具体的实现。(例：Collection接口)</li>
-<li>多进程与多线程本质区别在于多进程每个进程拥有自己的一整套变量，而线程则共享数据。</li>
-<li>线程可以有一下6种状态：  1.New(新创建) 2.Runnable(可运行)  3.Blocked(被阻塞)  4.Waiting(等待)  5.Timed waiting(计时等待)  6.Terminated(被终止)</li>
+<blockquote>
+<p>指的是错误的页面， 值需要给错误的页面路径</p>
+</blockquote>
+<ul>
+<li>isErrorPage</li>
 </ul>
-<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ul>
-<li>什么是数据库，数据库有什么作用?  数据库就是存储数据的仓库，其本质是一个文件系统，数据按照特定的格式将数据存储起来，用户可以对数据库中的数据进行增加，修改，删除及查询操作</li>
-<li>常见数据库有哪些?  Oracle数据库：Oracle是殷墟（yīn Xu）出土的甲骨文（oracle bone inscriptions）的英文翻译的第一个单词，在英语里是“神谕”的意思，由Larry Ellison 和另两个编程人员在1977创办，他们开发了自己的拳头产品，在市场上大量销售，1979 年，Oracle公司引入了第一个商用SQL 关系数据库管理系统。Oracle公司是最早开发关系数据库的厂商之一，其产品支持最广泛的操作系统平台。目前Oracle关系数据库产品的市场占有率名列前茅  SQL Server数据库：1987 年，微软和 IBM合作开发完成OS/2，IBM 在其销售的OS/2 ExtendedEdition 系统中绑定了OS/2Database Manager，而微软产品线中尚缺少数据库产品。为此，微软将目光投向Sybase，同Sybase 签订了合作协议，使用Sybase的技术开发基于OS/2平台的关系型数据库。1989年，微软发布了SQL Server 1.0 版  Sybase数据库：  Sybase公司成立于1984年，公司名称“Sybase”取自“system”和 “database” 相结合的含义。Sybase公司的创始人之一Bob Epstein 是Ingres 大学版（与System/R同时期的关系数据库模型产品）的主要设计人员。公司的第一个关系数据库产品是1987年5月推出的Sybase SQLServer1.0。Sybase首先提出Client/Server 数据库体系结构的思想，并率先在Sybase SQLServer 中实现  MySQL数据：  mySQL是一个小型关系型数据库管理系统，开发者为瑞典MySQL AB公司。在2008年1月16号被Sun公司收购。而2009年，Sun公司又被Oracle公司收购。目前MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库  DB2数据库：  作为关系数据库领域的开拓者和领航人，IBM在1997年完成了System R系统的原型，1980年开始提供集成的数据库服务器—— System/38，随后是SQL/DSforVSE和VM，其初始版本与SystemR研究原型密切相关。DB2 forMVSV1 在1983年推出。该版本的目标是提供这一新方案所承诺的简单性，数据不相关性和用户生产率。1988年DB2 for MVS 提供了强大的在线事务处理（OLTP）支持，1989 年和1993 年分别以远程工作单元和分布式工作单元实现了分布式数据库支持。最近推出的DB2 Universal Database 6.1则是通用数据库的典范，是第一个具备网上功能的多媒体关系数据库管理系统，支持包括Linux在内的一系列平台</li>
-<li><p>1.卸载</p>
-<pre><code>    查找到数据库数据文件存储位置
-        在mysql安装目录下有一个my.ini文件
-        datadir=&quot;C:/ProgramData/MySQL/MySQL Server 5.5/Data/&quot;            
-        将数据文件保存目录删除，在将mysql安装目录删除.
-2.安装            
-    1.可以选择典型安装，默认安装在C:\Program Files (x86)\mysql目录下
-    2.可以选择自定义安装  可以选择安装的目录            
-3.配置            
-    1) 配置mysql 默认字符集 
-    默认latin1 等价于 ISO-8859-1 改为 utf8
-    2) Include Bin Directory in Window Path 将mysql/bin 目录配置环境变量path ---- 勾选
-    3) 输入超级管理root 密码                  
-4.查看mysql服务
+<blockquote>
+<p>上面的errorPage 用于指定错误的时候跑到哪一个页面去。 那么这个isErroPage , 就是声明某一个页面到底是不是错误的页面。</p>
+</blockquote>
+<p>###include </p>
+<blockquote>
+<p>包含另外一个jsp的内容进来。</p>
+</blockquote>
+<pre><code>&lt;%@ include file=&quot;other02.jsp&quot;%&gt;
+</code></pre><ul>
+<li>背后细节:</li>
+</ul>
+<blockquote>
+<p>把另外一个页面的所有内容拿过来一起输出。 所有的标签元素都包含进来。</p>
+</blockquote>
+<h3 id="taglib"><a href="#taglib" class="headerlink" title="taglib"></a>taglib</h3><pre><code> &lt;%@ taglib prefix=&quot;&quot;  uri=&quot;&quot;%&gt;  
 
-    在运行中输入   services.msc
-    在使用mysql之前，要确保mysql服务开启.            
-    在服务器可以通过右键属性，设置服务手动开启，这样这个服务就不会跟随电脑开机启动。
-    可以在命令行上通过命令来开启与关闭服务器                
-        开启  net start mysql
-        关闭  net stop mysql
-
-5.操作mysql数据库            
-    1.mysql默认的客户端
-        默认的客户端连接的是 localhost   3306这个数据库服务器.                
-    2.在命令行下操作
-        1. mysql -u root -p 回车
-            输入密码  root                    
-            这种方式，默认连接的也是localhost  3306这个数据库服务器                    
-            -u 代表用户
-            -p 代表                    
-        2.    mysql -u root -h localhost -P 3306 -p
-            输入密码 root                    
-            -h 代表的是服务器的主机地址
-            -P 代表的是端口号
+uri: 标签库路径
+prefix : 标签库的别名  
+</code></pre><p>##JSP 动作标签</p>
+<pre><code>&lt;jsp:include page=&quot;&quot;&gt;&lt;/jsp:include&gt;
+&lt;jsp:param value=&quot;&quot; name=&quot;&quot;/&gt;
+&lt;jsp:forward page=&quot;&quot;&gt;&lt;/jsp:forward&gt;
+</code></pre><ul>
+<li><p>jsp:include</p>
+<p>&lt;jsp:include page=”other02.jsp”&gt;&lt;/jsp:include&gt;</p>
+</li>
+</ul>
+<blockquote>
+<p>包含指定的页面， 这里是动态包含。 也就是不把包含的页面所有元素标签全部拿过来输出，而是把它的运行结果拿过来。 </p>
+</blockquote>
+<ul>
+<li><p>jsp:forward</p>
+<pre><code>&lt;jsp:forward page=&quot;&quot;&gt;&lt;/jsp:forward&gt;
 </code></pre></li>
 </ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/22/今日份的总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-下午学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>﻿﻿﻿﻿﻿﻿—</p>
-<h2 id="title-下午学习笔记"><a href="#title-下午学习笔记" class="headerlink" title="title: 下午学习笔记"></a>title: 下午学习笔记</h2><p>###Java核心技术 卷Ⅰ<br><img src="/images/Java核心技术卷1.jpg" alt="“Java核心技术 卷Ⅰ”"></p>
-<ul>
-<li>如果导入两个包中名字相同的类时，在每个类名前加上完整的包名</li>
-<li>import语句不仅可以导类，还可以导入静态方法和静态域</li>
-<li>如果没有在源文件中放置package语句，这个源文件中的类就被放置在一个默认包中，默认包时一个没有名字的包</li>
-<li>如果没有指定public 或 private，这个部分（类、方法或变量）可以被同一个包中的所有方法访问，这对子变量不适合，因此变量必须显示地标记为private</li>
-<li>面向对象（oop）类设计技巧1.一定要保证数据私有2.一定要对数据初始化3.不要在类中使用过多的基本类型4.不是所有的域都需要独立的域访问器（getXxx()）和域更改器（setXxx()）5.将职责过多的类进行分解6.类名和方法名要能够体现它们的职责7.优先使用不可变的类</li>
-<li>一个对象变量可以指示多种实际类型的现象被称为多态。在运行时能够自动地选择调用哪个方法的现象称为动态绑定在Java中，对象变量时多态的，一个Employee变量既可以引用一个Employee类对象，也可以引用一个Employee类的任何一个子类对象</li>
-<li>继承–》“is a”规则，它表明子类的每个对象也是超类的对象</li>
-<li>如果将一个类声明为final，只有其中的方法自动地生成final，而不包括域</li>
-<li>包含一个或多个抽象方法的类本身必须被声明为抽象的除了抽象方法之外，抽象类还可以包含具体数据和具体方法抽象方法充当着占位的角色，它们的具体实现在子类中类及使不含抽象方法，也可以将类声明为抽象类抽象类不能被实例化，但可以创建一个具体的子类对象（父类引用指向子类对象）</li>
-<li>超类中的某些方法允许被子类访问，或允许子类的方法访问超类的某个域，为此，需要将这些方法或域声明为protected在实际应用中，谨慎使用protected属性</li>
-<li>可以使用Object类型的变量引用任何类型的对象：Object obj= new Employee()；</li>
-<li>继承的设计技巧：1.将公共操作和域放在超类2.不要使用受保护的域3.使用继承实现“is-a”关系4.除非所有继承的方法都有意义，否则不要使用继承5.再覆盖方法时，不要改变预期的行为6.使用多态，而非类型信息7.不要过多地使用反射</li>
-<li>接口中的所有方法自动地属于public，因此在接口中声明方法时，不必提供关键字public接口绝不能含有实例域接口中的域将被自动设为public static final</li>
-<li>Java中默认方法冲突优先性1.超（父）类优先   —》类与接口相比2.接口冲突，必须覆盖（重写）这个方法 —》接口与接口相比</li>
-<li>再次抛出异常与异常链try… catch 中 catch里面throw异常</li>
-<li>带资源的try语句，try块退出或存在异常时，会自动调用XXX.close()方法，关闭输入输出</li>
-<li>使用异常机制的技巧：1.异常处理不能代替简单的测试 —》只在异常情况下使用异常机制2.不要过分地细化异常  ———》将正常处理与错误处理分开3.利用异常层次结构4.不要压制异常5.早抛出，晚捕获</li>
-<li>Iterator迭代器对next方法和remove方法的调用具有互相依赖性。如果调用remove之前没有调用next将时不合法的迭代器Iterator中next()方法在到达集和尾部时将派出NoSuchElementException，因此需要在调用next之前调用hasNext方法。</li>
-<li>equals和hashCode的定义必须兼容，即如果x.equals(y)为true，x.hashCode()必须等于y.hashCode()。</li>
+<blockquote>
+<p>前往哪一个页面。  </p>
+</blockquote>
+<pre><code>&lt;% 
+    //请求转发
+    request.getRequestDispatcher(&quot;other02.jsp&quot;).forward(request, response);
+%&gt;    
+</code></pre><ul>
+<li>jsp:param</li>
 </ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/21/下午学习笔记/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+<blockquote>
+<p>意思是： 在包含某个页面的时候，或者在跳转某个页面的时候，加入这个参数。</p>
+</blockquote>
+<p>​<br>    &lt;jsp:forward page=”other02.jsp”&gt;<br>        &lt;jsp:param value=”beijing” name=”address”/&gt;<br>    &lt;/jsp:forward&gt;</p>
+<pre><code>在other02.jsp中获取参数
 
 
+&lt;br&gt;收到的参数是：&lt;br&gt;
 
+&lt;%= request.getParameter(&quot;address&quot;)%&gt;
+</code></pre><p>##JSP内置对象</p>
+<blockquote>
+<p>所谓内置对象，就是我们可以直接在jsp页面中使用这些对象。 不用创建。</p>
+</blockquote>
+<ul>
+<li>pageContext</li>
+<li>request</li>
+<li>session</li>
+<li>application</li>
+</ul>
+<p>以上4个是作用域对象 , </p>
+<ul>
+<li>作用域 </li>
+</ul>
+<blockquote>
+<p>表示这些对象可以存值，他们的取值范围有限定。  setAttribute   和  getAttribute</p>
+</blockquote>
+<pre><code>使用作用域来存储数据&lt;br&gt;
 
-  
-    <article id="post-上午学习总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>﻿﻿﻿—<br>title: 上午学习总结</p>
-<h2 id="date-2019-03-21-11-31-51"><a href="#date-2019-03-21-11-31-51" class="headerlink" title="date: 2019-03-21 11:31:51"></a>date: 2019-03-21 11:31:51</h2><h2 id="Java核心技术-卷Ⅰ"><a href="#Java核心技术-卷Ⅰ" class="headerlink" title="Java核心技术 卷Ⅰ"></a>Java核心技术 卷Ⅰ</h2><ol>
-<li><p>java源文件名必须与public类的名字相匹配；在一个源文件中，只能有一个共有类，但可以有任意数目的非公有类。</p>
+&lt;%
+    pageContext.setAttribute(&quot;name&quot;, &quot;page&quot;);
+    request.setAttribute(&quot;name&quot;, &quot;request&quot;);
+    session.setAttribute(&quot;name&quot;, &quot;session&quot;);
+    application.setAttribute(&quot;name&quot;, &quot;application&quot;);
+%&gt;
+
+取出四个作用域中的值&lt;br&gt;
+
+&lt;%=pageContext.getAttribute(&quot;name&quot;)%&gt;
+&lt;%=request.getAttribute(&quot;name&quot;)%&gt;
+&lt;%=session.getAttribute(&quot;name&quot;)%&gt;
+&lt;%=application.getAttribute(&quot;name&quot;)%&gt;
+</code></pre><p>作用域范围大小：</p>
+<pre><code>pageContext -- request --- session -- application 
+</code></pre><h3 id="四个作用域的区别"><a href="#四个作用域的区别" class="headerlink" title="四个作用域的区别"></a>四个作用域的区别</h3><ul>
+<li>pageContext 【PageContext】</li>
+</ul>
+<blockquote>
+<p>作用域仅限于当前的页面。  </p>
+</blockquote>
+<blockquote>
+<p>还可以获取到其他八个内置对象。</p>
+</blockquote>
+<ul>
+<li>request 【HttpServletRequest】</li>
+</ul>
+<blockquote>
+<p>作用域仅限于一次请求， 只要服务器对该请求做出了响应。 这个域中存的值就没有了。</p>
+</blockquote>
+<ul>
+<li>session 【HttpSession】</li>
+</ul>
+<blockquote>
+<p>作用域限于一次会话（多次请求与响应） 当中。 </p>
+</blockquote>
+<ul>
+<li>application 【ServletContext】</li>
+</ul>
+<blockquote>
+<p>整个工程都可以访问， 服务器关闭后就不能访问了。 </p>
+</blockquote>
+<ul>
+<li>out         【JspWriter】<ul>
+<li>response  【HttpServletResponse】</li>
+</ul>
 </li>
-<li><p>建议实例域用private标记，确保只有该类自身的方法能够访问这些实力域。public代表任何类的任何方法都可以调用。</p>
+</ul>
+<p><img src="img/img01.png" alt="icon"></p>
+<ul>
+<li>exception  【Throwable】<ul>
+<li>page     【Object】 —就是这个jsp翻译成的java类的实例对象<ul>
+<li>config 【ServletConfig】</li>
+</ul>
 </li>
-<li><p>构造器总是伴随着new操作符的植性被调用，而不能对一个已经存在的对象调用构造器来达到重新设置实例域的目的。</p>
+</ul>
 </li>
-<li><p>方法可以访问所调用对象的私有数据，一个方法可以访问所属类的所有对象的私有数据。</p>
-</li>
-<li><p>在实现一个类时，由于共有数据非常危险，所以应该将所有的数据域都设置为私有。</p>
-</li>
-<li>静态域static修饰，每个类中只有一个这样的域，它属于类，而不属于任何独立的对象。静态常量static final修饰，可以用类名.变量名调用；如果是非静态则需要通过类的对象.变量名调用。静态方法在以下两种情况下使用：1.一个方法不需要访问对象状态，其所需参数都是通过显示参数提供2.一个方法只需要访问类的静态域</li>
-<li>如果多个方法有相同的名字，不同的参数，变产生了重载。Java允许重载任何方法，而不只是构造器方法。</li>
-<li>域与局部变量不同点：必须明确地初始化方法中的局部变量，但是如果没有初始化类中的域，将会被自动初始化为默认值（0，false，null）。</li>
-<li>调用另一个构造器    关键字this引用方法的隐式参数。然而，这个关键字还有另一个含义，如果构造器的第一句如this（…），这个构造器将调用用一个类的另一个构造器。</li>
-<li>Random r = new Random（）；int x = r.nextInt（int n）； //返回一个0~n-1之间的随机数。</li>
+</ul>
+<p>##EL表达式</p>
+<blockquote>
+<p>是为了简化咱们的jsp代码，具体一点就是为了简化在jsp里面写的那些java代码。</p>
+</blockquote>
+<ul>
+<li>写法格式</li>
+</ul>
+<p>${表达式 }</p>
+<blockquote>
+<p>如果从作用域中取值，会先从小的作用域开始取，如果没有，就往下一个作用域取。  一直把四个作用域取完都没有， 就没有显示。</p>
+</blockquote>
+<p>###如何使用</p>
+<p>###1. 取出4个作用域中存放的值。</p>
+<pre><code>&lt;%
+    pageContext.setAttribute(&quot;name&quot;, &quot;page&quot;);
+    request.setAttribute(&quot;name&quot;, &quot;request&quot;);
+    session.setAttribute(&quot;name&quot;, &quot;session&quot;);
+    application.setAttribute(&quot;name&quot;, &quot;application&quot;);
+%&gt;
+
+按普通手段取值&lt;br&gt;
+
+&lt;%= pageContext.getAttribute(&quot;name&quot;)%&gt;
+&lt;%= request.getAttribute(&quot;name&quot;)%&gt;
+&lt;%= session.getAttribute(&quot;name&quot;)%&gt;
+&lt;%= application.getAttribute(&quot;name&quot;)%&gt;
+
+&lt;br&gt;使用EL表达式取出作用域中的值&lt;br&gt;
+
+${ pageScope.name }
+${ requestScope.name }
+${ sessionScope.name }
+${ applicationScope.name }
+</code></pre><ol start="2">
+<li><p>如果域中所存的是数组</p>
+<pre><code>&lt;%
+    String [] a = {&quot;aa&quot;,&quot;bb&quot;,&quot;cc&quot;,&quot;dd&quot;};
+    pageContext.setAttribute(&quot;array&quot;, a);
+%&gt;
+
+使用EL表达式取出作用域中数组的值&lt;br&gt;
+
+${array[0] } , ${array[1] },${array[2] },${array[3] }
+</code></pre></li>
 </ol>
+<ol start="3">
+<li>如果域中锁存的是集合</li>
+</ol>
+<pre><code>使用EL表达式取出作用域中集合的值&lt;br&gt;
+
+${li[0] } , ${li[1] },${li[2] },${li[3] }
+
+&lt;br&gt;-------------Map数据----------------&lt;br&gt;
+&lt;%
+    Map map = new HashMap();
+    map.put(&quot;name&quot;, &quot;zhangsna&quot;);
+    map.put(&quot;age&quot;,18);
+    map.put(&quot;address&quot;,&quot;北京..&quot;);
+
+    map.put(&quot;address.aa&quot;,&quot;深圳..&quot;);
+
+
+    pageContext.setAttribute(&quot;map&quot;, map);
+%&gt;
+</code></pre><ol start="4">
+<li><p>取出Map集合的值</p>
+<pre><code>&lt;%
+    Map map = new HashMap();
+    map.put(&quot;name&quot;, &quot;zhangsna&quot;);
+    map.put(&quot;age&quot;,18);
+    map.put(&quot;address&quot;,&quot;北京..&quot;);
+
+    map.put(&quot;address.aa&quot;,&quot;深圳..&quot;);
+</code></pre></li>
+</ol>
+<pre><code>    pageContext.setAttribute(&quot;map&quot;, map);
+%&gt;
+使用EL表达式取出作用域中Map的值&lt;br&gt;
+
+${map.name } , ${map.age } , ${map.address }  , ${map[&quot;address.aa&quot;] }
+</code></pre><p>###取值细节：</p>
+<ol>
+<li><p>从域中取值。  得先存值。<br>&lt;%</p>
+<pre><code>//pageContext.setAttribute(&quot;name&quot;, &quot;zhangsan&quot;);
+session.setAttribute(&quot;name&quot;, &quot;lisi...&quot;);
+</code></pre><p>%&gt;</p>
+<p><br>直接指定说了，到这个作用域里面去找这个name<br><br>${ pageScope.name } </p>
+</li>
+</ol>
+<p>   <br>//先从page里面找，没有去request找，去session，去application <br><br>   ${ name }</p>
+<p>   <br>指定从session中取值<br><br>   ${ sessionScope.name }  </p>
+<ol start="2">
+<li>取值方式</li>
+</ol>
+<p>如果这份值是有下标的，那么直接使用[]</p>
+<pre><code>&lt;%
+    String [] array = {&quot;aa&quot;,&quot;bb&quot;,&quot;cc&quot;}
+    session.setAttribute(&quot;array&quot;,array);
+%&gt;
+
+
+${ array[1] } --&gt; 这里array说的是attribute的name 
+</code></pre><p>如果没有下标， 直接使用 .的方式去取</p>
+<pre><code>&lt;%
+    User user = new User(&quot;zhangsan&quot;,18);
+
+    session.setAttribute(&quot;u&quot;, user);
+%&gt;
+
+${ u.name }  , ${ u.age } 
+</code></pre><blockquote>
+<p>一般使用EL表达式，用的比较多的，都是从一个对象中取出它的属性值，比如取出某一个学生的姓名。</p>
+</blockquote>
+<p>##EL表达式 的11个内置对象。 </p>
+<p>${ 对象名.成员 }</p>
+<ul>
+<li>pageContext </li>
+</ul>
+<p>作用域相关对象</p>
+<ul>
+<li>pageScope</li>
+<li>requestScope</li>
+<li>sessionScope</li>
+<li>applicationScope</li>
+</ul>
+<p>头信息相关对象</p>
+<ul>
+<li>header</li>
+<li>headerValues</li>
+</ul>
+<p>参数信息相关对象</p>
+<ul>
+<li>param</li>
+<li>paramValues</li>
+</ul>
+<ul>
+<li>cookie<br>全局初始化参数</li>
+<li>initParam</li>
+</ul>
+<p>##JSTL</p>
+<blockquote>
+<p>全称 ： JSP Standard Tag Library  jsp标准标签库</p>
+</blockquote>
+<blockquote>
+<p>简化jsp的代码编写。 替换 &lt;%%&gt; 写法。 一般与EL表达式配合</p>
+</blockquote>
+<p>###怎么使用</p>
+<ol>
+<li><p>导入jar文件到工程的WebContent/Web-Inf/lib  jstl.jar standard.jar</p>
+</li>
+<li><p>在jsp页面上，使用taglib 指令，来引入标签库</p>
+</li>
+<li><p>注意： 如果想支持 EL表达式，那么引入的标签库必须选择1.1的版本，1.0的版本不支持EL表达式。</p>
+</li>
+</ol>
+<pre><code>&lt;%@ taglib prefix=&quot;c&quot; uri=&quot;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+</code></pre><p>###常用标签</p>
+<p>&lt;c:set&gt;&lt;/c:set&gt;<br>&lt;c:if test=””&gt;&lt;/c:if&gt;<br>&lt;c:forEach&gt;&lt;/c:forEach&gt;</p>
+<ul>
+<li>c:set</li>
+</ul>
+<pre><code>&lt;!-- 声明一个对象name， 对象的值 zhangsan , 存储到了page（默认） ， 指定是session --&gt;
+&lt;c:set var=&quot;name&quot; value=&quot;zhangsan&quot; scope=&quot;session&quot;&gt;&lt;/c:set&gt;
+
+${sessionScope.name }
+</code></pre><ul>
+<li>c:if</li>
+</ul>
+<blockquote>
+<p>判断test里面的表达式是否满足，如果满足，就执行c:if标签中的输出 ， c:if 是没有else的。 </p>
+</blockquote>
+<pre><code>&lt;c:set var=&quot;age&quot; value=&quot;18&quot; &gt;&lt;/c:set&gt;
+&lt;c:if test=&quot;${ age &gt; 26 }&quot;&gt;
+    年龄大于了26岁...
+&lt;/c:if&gt;
+
+&lt;c:if test=&quot;${ age &lt;= 26 }&quot;&gt;
+    年龄小于了26岁...
+&lt;/c:if&gt;
+
+
+------------------------------
+
+定义一个变量名 flag  去接收前面表达式的值，然后存在session域中
+
+&lt;c:if test=&quot;${ age &gt; 26 }&quot; var=&quot;flag&quot; scope=&quot;session&quot;&gt;
+    年龄大于了26岁...
+&lt;/c:if&gt;
+</code></pre><ul>
+<li>c:forEach</li>
+</ul>
+<pre><code>从1 开始遍历到10 ，得到的结果 ，赋值给 i ,并且会存储到page域中， step , 增幅为2， 
+&lt;c:forEach begin=&quot;1&quot; end=&quot;10&quot; var=&quot;i&quot; step=&quot;2&quot;&gt;
+    ${i }
+&lt;/c:forEach&gt;
+
+
+-----------------------------------------------
+
+&lt;!-- items : 表示遍历哪一个对象，注意，这里必须写EL表达式。 
+var: 遍历出来的每一个元素用user 去接收。 --&gt;
+&lt;c:forEach var=&quot;user&quot; items=&quot;${list }&quot;&gt;
+    ${user.name } ----${user.age }
+&lt;/c:forEach&gt;
+</code></pre><p>##学生信息管理系统</p>
+<ul>
+<li>需求分析</li>
+</ul>
+<p><img src="img/img02.png" alt="icon"></p>
+<ol>
+<li><p>先写 login.jsp , 并且搭配一个LoginServlet 去获取登录信息。</p>
+</li>
+<li><p>创建用户表， 里面只要有id , username  和 password</p>
+</li>
+<li><p>创建UserDao, 定义登录的方法 </p>
+<pre><code>/**
+</code></pre><ul>
+<li><p>该dao定义了对用户表的访问规则<br> */<br>public interface UserDao {</p>
+<pre><code>/**
+</code></pre><ul>
+<li>这里简单就返回一个Boolean类型， 成功或者失败即可。<ul>
+<li>​</li>
+<li>但是开发的时候，登录的方法，一旦成功。这里应该返回该用户的个人信息</li>
+<li>@param userName </li>
+<li>@param password</li>
+<li>​</li>
+<li>@return true : 登录成功， false : 登录失败。<br> */<br>boolean login(String userName , String password);<br>}</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ol start="4">
+<li>创建UserDaoImpl , 实现刚才定义的登录方法。</li>
+</ol>
+<pre><code>public class UserDaoImpl implements UserDao {
+
+    @Override
+    public boolean login(String userName , String password) {
+
+        Connection conn = null;
+        PreparedStatement ps = null;
+        ResultSet rs   = null;
+        try {
+            //1. 得到连接对象
+            conn = JDBCUtil.getConn();
+
+            String sql = &quot;select * from t_user where username=? and password=?&quot;;
+
+            //2. 创建ps对象
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, userName);
+            ps.setString(2, password);
+
+
+            //3. 开始执行。
+            rs = ps.executeQuery();
+
+            //如果能够成功移到下一条记录，那么表明有这个用户。 
+            return rs.next();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtil.release(conn, ps, rs);
+        }
+        return false;
+    }
+
+}
+</code></pre><ol start="5">
+<li><p>在LoginServlet里面访问UserDao， 判断登录结果。 以区分对待</p>
+</li>
+<li><p>创建stu_list.jsp , 让登录成功的时候跳转过去。</p>
+</li>
+<li><p>创建学生表 ， 里面字段随意。 </p>
+</li>
+<li><p>定义学生的Dao . StuDao  </p>
+</li>
+</ol>
+<pre><code>public interface StuDao {
+
+    /**
+     * 查询出来所有的学生信息
+     * @return List集合
+     */
+    List&lt;Student&gt; findAll();
+}
+</code></pre><ol start="9">
+<li><p>对上面定义的StuDao 做出实现 StuDaoImpl</p>
+<pre><code>public class StuDaoImpl implements StuDao {
+
+    @Override
+    public List&lt;Student&gt; findAll() {
+        List&lt;Student&gt; list = new ArrayList&lt;Student&gt;();
+        Connection conn = null;
+        PreparedStatement ps = null;
+        ResultSet rs   = null;
+        try {
+            //1. 得到连接对象
+            conn = JDBCUtil.getConn();
+
+            String sql = &quot;select * from t_stu&quot;;
+
+            ps = conn.prepareStatement(sql);
+
+            rs = ps.executeQuery();
+</code></pre></li>
+</ol>
+<p>   ​<br>                   //数据多了，用对象装， 对象也多了呢？ 用集合装。<br>                   while(rs.next()){ //10 次 ，10个学生</p>
+<pre><code>                Student stu = new Student();
+
+                stu.setId(rs.getInt(&quot;id&quot;));
+                stu.setAge(rs.getInt(&quot;age&quot;));
+                stu.setName(rs.getString(&quot;name&quot;));
+                stu.setGender(rs.getString(&quot;gender&quot;));
+                stu.setAddress(rs.getString(&quot;address&quot;));
+
+                list.add(stu);
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtil.release(conn, ps, rs);
+        }
+
+        return list;
+    }
+
+}
+</code></pre><ol start="10">
+<li><p>在登录成功的时候，完成三件事情。</p>
+</li>
+<li><p>查询所有的学生</p>
+<ol start="2">
+<li><p>把这个所有的学生集合存储到作用域中。</p>
+</li>
+<li><p>跳转到stu_list.jsp</p>
+</li>
+</ol>
+</li>
+</ol>
+<pre><code>    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+    //提交的数据有可能有中文， 怎么处理。
+    request.setCharacterEncoding(&quot;UTF-8&quot;);
+    response.setContentType(&quot;text/html;charset=utf-8&quot;);
+
+    //1. 获取客户端提交的信息
+    String userName = request.getParameter(&quot;username&quot;);
+    String password = request.getParameter(&quot;password&quot;);
+
+    //2. 去访问dao ， 看看是否满足登录。
+    UserDao dao = new UserDaoImpl();
+    boolean isSuccess = dao.login(userName, password);
+
+    //3. 针对dao的返回结果，做出响应
+    if(isSuccess){
+        //response.getWriter().write(&quot;登录成功.&quot;);
+
+        //1. 查询出来所有的学生信息。
+        StuDao stuDao = new StuDaoImpl();
+        List&lt;Student&gt; list = stuDao.findAll();
+
+        //2. 先把这个集合存到作用域中。
+        request.getSession().setAttribute(&quot;list&quot;, list);
+
+        //2. 重定向
+        response.sendRedirect(&quot;stu_list.jsp&quot;);
+
+    }else{
+        response.getWriter().write(&quot;用户名或者密码错误！&quot;);
+    }
+}
+</code></pre><ol start="11">
+<li>在stu_list.jsp中，取出域中的集合，然后使用c标签 去遍历集合。 </li>
+</ol>
+<pre><code>    &lt;table border=&quot;1&quot; width=&quot;700&quot;&gt;
+    &lt;tr align=&quot;center&quot;&gt;
+        &lt;td&gt;编号&lt;/td&gt;
+        &lt;td&gt;姓名&lt;/td&gt;
+        &lt;td&gt;年龄&lt;/td&gt;
+        &lt;td&gt;性别&lt;/td&gt;
+        &lt;td&gt;住址&lt;/td&gt;
+        &lt;td&gt;操作&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;c:forEach items=&quot;${list }&quot; var=&quot;stu&quot;&gt;
+        &lt;tr align=&quot;center&quot;&gt;
+            &lt;td&gt;${stu.id }&lt;/td&gt;
+            &lt;td&gt;${stu.name }&lt;/td&gt;
+            &lt;td&gt;${stu.age }&lt;/td&gt;
+            &lt;td&gt;${stu.gender }&lt;/td&gt;
+            &lt;td&gt;${stu.address }&lt;/td&gt;
+            &lt;td&gt;&lt;a href=&quot;#&quot;&gt;更新&lt;/a&gt;   &lt;a href=&quot;#&quot;&gt;删除&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/c:forEach&gt;
+&lt;/table&gt;
+</code></pre><p>##总结：</p>
+<ul>
+<li><p>JSP</p>
+<pre><code>三大指令
+
+    page
+    include
+    taglib
+
+三个动作标签
+    &lt;jsp:include&gt;
+    &lt;jsp:forward&gt;
+    &lt;jsp:param&gt;
+</code></pre></li>
+</ul>
+<pre><code>九个内置对象
+
+    四个作用域
+        pageContext
+        request
+        session
+        application
+
+    out
+    exception
+    response
+    page
+    config
+</code></pre><p>​            </p>
+<ul>
+<li><p>EL</p>
+<p>${ 表达式 }</p>
+<p>取4个作用域中的值</p>
+<pre><code>${ name }
+</code></pre><p>有11个内置对象。</p>
+<pre><code>pageContext
+
+pageScope
+requestScope
+sessionScope
+applicationScope
+
+header
+headerValues
+
+param
+paramValues
+
+cookie
+initParam
+</code></pre></li>
+<li><p>JSTL</p>
+</li>
+</ul>
+<blockquote>
+<p>使用1.1的版本， 支持EL表达式， 1.0不支持EL表达式</p>
+</blockquote>
+<blockquote>
+<p>拷贝jar包， 通过taglib 去引入标签库</p>
+</blockquote>
+<pre><code>&lt;c:set&gt;
+&lt;c:if&gt;
+&lt;c:forEach&gt;
+</code></pre><p>​    </p>
 
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -542,16 +855,75 @@ primary key(id)
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/21/上午学习总结/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/01/四月一日总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/31/31号总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -571,183 +943,14 @@ primary key(id)
 
 
 
-
-  
-    <article id="post-第一天总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>﻿—<br>title: 第一天总结<br>date: 2019-03-20 21:11:52</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>###java核心技术 Ⅰ 复习总结:<br>1.double(双精度数值)表示的数值精度是float的两倍,绝大部分应用程序都采用double类型2.所有”非数值”的值都认为是不相同的      NaN(不是一个数字)3.\r 表示回车   \n 表示换行4.声明一个变量后,必须用赋值语句对变量进行显示初始化,千万结果使用未初始化的变量,也可以将变量的声明和初始化放在同一行中.5.关键字final知识常量,常量名使用全大写(一旦被赋值,就不能更改).类常量指某个常量可以在一个类中的多个方法中使用.使用static final 修饰.类常量的定义位于main方法的外部.因此,在同一个类的其他方法中也可以使用这个常量.而且,如果一个常量被声明为public,那么其他类的方法也可以使用这个常量6.当参与/运算的两个数都是整数时,表示整数除法;否则,表示浮点除法例: 15/2等于7   15.0/2等于7.5  15%2等于1注意:整数被0除将会产生一个异常,而浮点数被0除将会得到无穷大或NaN结果7.强制类型转换中可以用Math.round方法进行舍入运算例:  <code>double x = 9.997; int nx = (int)x  //nx=9;int nx = (int)Math.round(x);  //nx=10</code>8.java中不能再嵌套的两个块中声明同名的变量9.大数值:如果基本的整数和浮点数精度不能够满足需求,那么可以使用java.math包中的两个类:BigInteger和BigDecimal.BigInteger类实现了任意精度的整数运算;BigDecimal类实现了任意精度的浮点数运算.使用valueOf方法可以将普通数值转为大数值 例:<code>BigInteger a = BigInter.valueOf(100);</code>10.创建一个数字数组时,所有元素都初始化为0;boolean数组的元素会初始化为false;对象数组的元素则初始化为一个特殊值null,表示这些元素未存放任何对象.</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/20/第一天总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: 我的第一篇文章<br>date: 2019-03-20 15:37:15</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>初记：</p>
-<pre><code>在经历了一天的测试之后hexo博客终于搭好了,希望自己能每天坚持记录自己学习的过程!
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/20/我的第一篇文章/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/03/20/hello-world/" class="archive-article-date">
-  	<time datetime="2019-03-20T06:43:45.606Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/20/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -770,8 +973,8 @@ primary key(id)
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
