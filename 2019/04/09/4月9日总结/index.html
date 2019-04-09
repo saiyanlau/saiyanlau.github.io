@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="M﻿﻿﻿﻿﻿—title: 4月9日总结date: 2019-04-09 21:18:46 tags:##今天学习了day13-16中  “abc”等效于char[] data = {‘a’,’b’,’c’};   String底层是靠字符数组实现的  静态代码块：定义在成员位置，使用static修饰的代码块   位置：类中方法外  执行：随着类的加载而执行，且执行以此，优先于main">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/page/3/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/04/09/4月9日总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="M﻿﻿﻿﻿﻿—title: 4月9日总结date: 2019-04-09 21:18:46 tags:##今天学习了day13-16中  “abc”等效于char[] data = {‘a’,’b’,’c’};   String底层是靠字符数组实现的  静态代码块：定义在成员位置，使用static修饰的代码块   位置：类中方法外  执行：随着类的加载而执行，且执行以此，优先于main">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-09T13:39:16.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="M﻿﻿﻿﻿﻿—title: 4月9日总结date: 2019-04-09 21:18:46 tags:##今天学习了day13-16中  “abc”等效于char[] data = {‘a’,’b’,’c’};   String底层是靠字符数组实现的  静态代码块：定义在成员位置，使用static修饰的代码块   位置：类中方法外  执行：随着类的加载而执行，且执行以此，优先于main">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,157 +154,179 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-4月9日总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿﻿﻿﻿M﻿﻿﻿﻿﻿—<br>title: 4月9日总结<br>date: 2019-04-09 21:18:46</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>##今天学习了day13-16中</p>
+<ol>
+<li><p>“abc”等效于char[] data = {‘a’,’b’,’c’};   String底层是靠字符数组实现的</p>
+</li>
+<li><p>静态代码块：定义在成员位置，使用static修饰的代码块   位置：类中方法外  执行：随着类的加载而执行，且执行以此，优先于main方法和构造方法执行</p>
+</li>
+<li><p>父类成员变量是非私有的，子类中可以直接访问；若父类中的成员变量私有了，子类不能直接访问，可以在父类提供公共的getXxx方法和setXxx方法</p>
+</li>
+<li><p>一个接口能继承另一个或者多个接口，使用extends关键字。子接口继承父接口的方法：如果父接口中的默认方法有重名，那么子接口需要重写以此；默认方法没有重名，可以继承或重写。子接口重写默认方法是，default关键字可以保留；子类重写默认方法时，default关键字不可以保留。</p>
+</li>
+<li><p>`final int c = 0;<br>for(int i = 0; i &lt; 10; i++) {<br>c=  i;      //报错<br>System.out.println(c);<br>}</p>
+</li>
+</ol>
+<p>for(int i = 0; i &lt; 10; i++) {<br>final int  c = i;      //不报错，每次循环都是一次新的变量c<br>System.out.println(c);<br>}`</p>
+<ol>
+<li>基本类型——》字符串 <ul>
+<li>使用包装类的toStirng()方法</li>
+<li>使用String类的valueOf()方法</li>
+<li>基本类型+“”<br>字符串——》基本类型 </li>
+<li>调用包装类的parseXxx静态方法</li>
+<li>调用包装类的valueOf()方法转换为基本类型的包装类，会自动拆箱 </li>
+</ul>
+</li>
+<li><p>获取迭代器的实现类对象，并且会把指针（索引）指向集和的-1索引。当调用next()方法时，做了两件事：</p>
+<ul>
+<li>取出下一个元素</li>
+<li>会把指针向后移动一位</li>
+</ul>
+</li>
+<li><p>泛型通配符高级使用——受限泛型</p>
+<ul>
+<li>&lt;? extends 类&gt; 只能接收该类型及其子类</li>
+<li>&lt;? super 类&gt; 只能接收该类型及其父类</li>
+</ul>
+</li>
+<li><p>Map集和不能直接使用迭代器或者foreach进行遍历，但是转成Set之后就可以使用了。
+</p>
+</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/22/今日份的总结/" class="archive-article-date">
-  	<time datetime="2019-03-22T09:50:44.182Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-22</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/09/4月9日总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/21/下午学习笔记/" class="archive-article-date">
-  	<time datetime="2019-03-21T12:26:59.088Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-21</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/21/上午学习总结/" class="archive-article-date">
-  	<time datetime="2019-03-21T03:31:51.071Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-21</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/08/4月8日总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/20/第一天总结/" class="archive-article-date">
-  	<time datetime="2019-03-20T13:11:52.924Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-20</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/20/我的第一篇文章/" class="archive-article-date">
-  	<time datetime="2019-03-20T07:37:15.614Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-20</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/20/hello-world/" class="archive-article-date">
-  	<time datetime="2019-03-20T06:43:45.606Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-20</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/20/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/page/2/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
+  
+
   
 
 
@@ -324,8 +350,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
