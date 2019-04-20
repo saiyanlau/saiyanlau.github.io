@@ -152,6 +152,60 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-4月20日总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: 4月20日总结<br>date: 2019-04-20 22:24:44</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>今天早上去新校区开运动会了</p>
+<p>下午刷了会B站</p>
+<p>晚上开始学习</p>
+<p>##<br>今晚学习了web开发的简单功能：增删改  昨天学习了查找 </p>
+<p>##明天开始学习web的复杂功能！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/20/4月20日总结/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-4月19日总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -671,93 +725,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/04/10/4月10日总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-4月9日总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>﻿﻿﻿﻿M﻿﻿﻿﻿﻿—<br>title: 4月9日总结<br>date: 2019-04-09 21:18:46</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>##今天学习了day13-16中</p>
-<ol>
-<li><p>“abc”等效于char[] data = {‘a’,’b’,’c’};   String底层是靠字符数组实现的</p>
-</li>
-<li><p>静态代码块：定义在成员位置，使用static修饰的代码块   位置：类中方法外  执行：随着类的加载而执行，且执行以此，优先于main方法和构造方法执行</p>
-</li>
-<li><p>父类成员变量是非私有的，子类中可以直接访问；若父类中的成员变量私有了，子类不能直接访问，可以在父类提供公共的getXxx方法和setXxx方法</p>
-</li>
-<li><p>一个接口能继承另一个或者多个接口，使用extends关键字。子接口继承父接口的方法：如果父接口中的默认方法有重名，那么子接口需要重写以此；默认方法没有重名，可以继承或重写。子接口重写默认方法是，default关键字可以保留；子类重写默认方法时，default关键字不可以保留。</p>
-</li>
-<li><p>`final int c = 0;<br>for(int i = 0; i &lt; 10; i++) {<br>c=  i;      //报错<br>System.out.println(c);<br>}</p>
-</li>
-</ol>
-<p>for(int i = 0; i &lt; 10; i++) {<br>final int  c = i;      //不报错，每次循环都是一次新的变量c<br>System.out.println(c);<br>}`</p>
-<ol>
-<li>基本类型——》字符串 <ul>
-<li>使用包装类的toStirng()方法</li>
-<li>使用String类的valueOf()方法</li>
-<li>基本类型+“”<br>字符串——》基本类型 </li>
-<li>调用包装类的parseXxx静态方法</li>
-<li>调用包装类的valueOf()方法转换为基本类型的包装类，会自动拆箱 </li>
-</ul>
-</li>
-<li><p>获取迭代器的实现类对象，并且会把指针（索引）指向集和的-1索引。当调用next()方法时，做了两件事：</p>
-<ul>
-<li>取出下一个元素</li>
-<li>会把指针向后移动一位</li>
-</ul>
-</li>
-<li><p>泛型通配符高级使用——受限泛型</p>
-<ul>
-<li>&lt;? extends 类&gt; 只能接收该类型及其子类</li>
-<li>&lt;? super 类&gt; 只能接收该类型及其父类</li>
-</ul>
-</li>
-<li><p>Map集和不能直接使用迭代器或者foreach进行遍历，但是转成Set之后就可以使用了。
-</p>
-</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/04/09/4月9日总结/">展开全文 >></a>
         </p>
       
 
