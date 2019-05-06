@@ -152,6 +152,102 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-今日份的总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿﻿﻿﻿﻿﻿—</p>
+<h2 id="title-今日份的总结"><a href="#title-今日份的总结" class="headerlink" title="title: 今日份的总结"></a>title: 今日份的总结</h2><p>今天在看了Java核心技术卷1后,终于看不下去了，放弃改看数据库方面的知识。总结Java核心技术的感觉就是视频资料中的内容属于精简出核心内容，通过系统的阅读书籍可以让我有更深的理解，对Java有一个深层次的认识，我深知之不是一朝一夕能理解透的，所以将Java和信心技术先搁置留作查阅资料，转而开始攻克数据库JDBC部分。</p>
+<h2 id="Java核心技术卷1"><a href="#Java核心技术卷1" class="headerlink" title="Java核心技术卷1"></a>Java核心技术卷1</h2><ul>
+<li>二分查找  Collections类的binarySearch，集和必须是排好序的  如果binarySearch方法返回数值大于等于0，表示匹配对象的索引  如果返回负值，表示没有匹配的元素  但可以利用返回值插入元素，使集和保持有序性——&gt;插入位置：-i-1(i&lt;0)。</li>
+<li>数组——&gt;集和 Arrays.asList  集和——&gt;数组 toArray toArray方法返回的数组是一个Object[]数组，不能改变它的类型  例：  String[] values = …;  HashSet<string> staff = new HashSet(Array.asList(values));  Object[] values = staff.toArray();  String[] values = staff.toArray(new String[0]);  staff.toArray(new string[staff.size()]);——&gt;不会创建新数组</string></li>
+<li>如果编写自己的以集和作为参数的任何方法，应该尽可能地使用接口，而不要使用具体的实现。(例：Collection接口)</li>
+<li>多进程与多线程本质区别在于多进程每个进程拥有自己的一整套变量，而线程则共享数据。</li>
+<li>线程可以有一下6种状态：  1.New(新创建) 2.Runnable(可运行)  3.Blocked(被阻塞)  4.Waiting(等待)  5.Timed waiting(计时等待)  6.Terminated(被终止)</li>
+</ul>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><ul>
+<li>什么是数据库，数据库有什么作用?  数据库就是存储数据的仓库，其本质是一个文件系统，数据按照特定的格式将数据存储起来，用户可以对数据库中的数据进行增加，修改，删除及查询操作</li>
+<li>常见数据库有哪些?  Oracle数据库：Oracle是殷墟（yīn Xu）出土的甲骨文（oracle bone inscriptions）的英文翻译的第一个单词，在英语里是“神谕”的意思，由Larry Ellison 和另两个编程人员在1977创办，他们开发了自己的拳头产品，在市场上大量销售，1979 年，Oracle公司引入了第一个商用SQL 关系数据库管理系统。Oracle公司是最早开发关系数据库的厂商之一，其产品支持最广泛的操作系统平台。目前Oracle关系数据库产品的市场占有率名列前茅  SQL Server数据库：1987 年，微软和 IBM合作开发完成OS/2，IBM 在其销售的OS/2 ExtendedEdition 系统中绑定了OS/2Database Manager，而微软产品线中尚缺少数据库产品。为此，微软将目光投向Sybase，同Sybase 签订了合作协议，使用Sybase的技术开发基于OS/2平台的关系型数据库。1989年，微软发布了SQL Server 1.0 版  Sybase数据库：  Sybase公司成立于1984年，公司名称“Sybase”取自“system”和 “database” 相结合的含义。Sybase公司的创始人之一Bob Epstein 是Ingres 大学版（与System/R同时期的关系数据库模型产品）的主要设计人员。公司的第一个关系数据库产品是1987年5月推出的Sybase SQLServer1.0。Sybase首先提出Client/Server 数据库体系结构的思想，并率先在Sybase SQLServer 中实现  MySQL数据：  mySQL是一个小型关系型数据库管理系统，开发者为瑞典MySQL AB公司。在2008年1月16号被Sun公司收购。而2009年，Sun公司又被Oracle公司收购。目前MySQL被广泛地应用在Internet上的中小型网站中。由于其体积小、速度快、总体拥有成本低，尤其是开放源码这一特点，许多中小型网站为了降低网站总体拥有成本而选择了MySQL作为网站数据库  DB2数据库：  作为关系数据库领域的开拓者和领航人，IBM在1997年完成了System R系统的原型，1980年开始提供集成的数据库服务器—— System/38，随后是SQL/DSforVSE和VM，其初始版本与SystemR研究原型密切相关。DB2 forMVSV1 在1983年推出。该版本的目标是提供这一新方案所承诺的简单性，数据不相关性和用户生产率。1988年DB2 for MVS 提供了强大的在线事务处理（OLTP）支持，1989 年和1993 年分别以远程工作单元和分布式工作单元实现了分布式数据库支持。最近推出的DB2 Universal Database 6.1则是通用数据库的典范，是第一个具备网上功能的多媒体关系数据库管理系统，支持包括Linux在内的一系列平台</li>
+<li><p>1.卸载</p>
+<pre><code>    查找到数据库数据文件存储位置
+        在mysql安装目录下有一个my.ini文件
+        datadir=&quot;C:/ProgramData/MySQL/MySQL Server 5.5/Data/&quot;            
+        将数据文件保存目录删除，在将mysql安装目录删除.
+2.安装            
+    1.可以选择典型安装，默认安装在C:\Program Files (x86)\mysql目录下
+    2.可以选择自定义安装  可以选择安装的目录            
+3.配置            
+    1) 配置mysql 默认字符集 
+    默认latin1 等价于 ISO-8859-1 改为 utf8
+    2) Include Bin Directory in Window Path 将mysql/bin 目录配置环境变量path ---- 勾选
+    3) 输入超级管理root 密码                  
+4.查看mysql服务
+
+    在运行中输入   services.msc
+    在使用mysql之前，要确保mysql服务开启.            
+    在服务器可以通过右键属性，设置服务手动开启，这样这个服务就不会跟随电脑开机启动。
+    可以在命令行上通过命令来开启与关闭服务器                
+        开启  net start mysql
+        关闭  net stop mysql
+
+5.操作mysql数据库            
+    1.mysql默认的客户端
+        默认的客户端连接的是 localhost   3306这个数据库服务器.                
+    2.在命令行下操作
+        1. mysql -u root -p 回车
+            输入密码  root                    
+            这种方式，默认连接的也是localhost  3306这个数据库服务器                    
+            -u 代表用户
+            -p 代表                    
+        2.    mysql -u root -h localhost -P 3306 -p
+            输入密码 root                    
+            -h 代表的是服务器的主机地址
+            -P 代表的是端口号
+</code></pre></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/22/今日份的总结/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-下午学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
