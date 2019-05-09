@@ -152,6 +152,100 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-jdbc和html学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿—<br>title: jdbc和html学习<br>date: 2019-03-25 21:08:07</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h2 id="数据表操作"><a href="#数据表操作" class="headerlink" title="数据表操作"></a>数据表操作</h2><h3 id="创建表"><a href="#创建表" class="headerlink" title="创建表"></a>创建表</h3><ol>
+<li>创建表—使用默认的字符集与校对                create table 表名(<pre><code>    字段1 类型，
+    字段2 类型,
+    .....
+);
+</code></pre></li>
+<li>创建表–指定字符集与校对                create table 表名(<pre><code>    字段1 类型，
+    字段2 类型,
+    .....
+) character set 字符集  collate 校对;
+</code></pre><h3 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h3></li>
+</ol>
+<ol>
+<li>主键约束1.在创建表时，在字段后面加上  primary key.<pre><code>create table tablename(                        
+    id int primary key,
+    .......
+)
+</code></pre>2.也可以表创建的最后来指定主键                                                                create table tablename(                        <pre><code>id int，
+.......
+primary key(id)
+</code></pre>)<br>3.删除主键：alter table tablename drop primary key ;</li>
+</ol>
+<ol>
+<li><p>唯一约束 某一列的值不为重复可以使用唯一约束.    unique</p>
+</li>
+<li><p>非空约束 not null</p>
+</li>
+<li><p>默认值约束 default 值</p>
+</li>
+<li><p>外键约束</p>
+</li>
+<li><p>自动增长  auto_increment</p>
+</li>
+</ol>
+<h2 id="查看修改删除表"><a href="#查看修改删除表" class="headerlink" title="查看修改删除表"></a>查看修改删除表</h2><p>###查看表</p>
+<ol>
+<li>查看表结构 desc 表名;    </li>
+<li>查看当前数据库下所有表 show tables;</li>
+<li>查看表的字符编码集 show create table 表名;    </li>
+</ol>
+<h3 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h3><ol>
+<li>修改表的结构语法格式:alter table 表名 关键字 ….;</li>
+<li>修改表的名称 rename table 旧表名 to 新表名;</li>
+<li>修改表的字符编码集 alter table 表名 character set 字符集;</li>
+</ol>
+<p>###删除表<br>drop table 表名;</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/25/jdbc和html学习/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-数据库学习1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
