@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="—title: 5月27日总结date: 2019-05-27 22:03:02 tags:今天主要学的是《Java多线程编程核心技术》的第三章和第四章内容。 1.等待/通知机制的实现：wait()/notify() 其中wait执行释放锁,他们都在同步锁内完后 2.线程生命周期 3.线程释放锁的三种情况的总结 4.wait(long) 5.生产者/消费者模式是最经典的等待/通知模式(一对一,一">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/page/2/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/05/27/5月27日总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="—title: 5月27日总结date: 2019-05-27 22:03:02 tags:今天主要学的是《Java多线程编程核心技术》的第三章和第四章内容。 1.等待/通知机制的实现：wait()/notify() 其中wait执行释放锁,他们都在同步锁内完后 2.线程生命周期 3.线程释放锁的三种情况的总结 4.wait(long) 5.生产者/消费者模式是最经典的等待/通知模式(一对一,一">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-05-27T14:18:12.311Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="—title: 5月27日总结date: 2019-05-27 22:03:02 tags:今天主要学的是《Java多线程编程核心技术》的第三章和第四章内容。 1.等待/通知机制的实现：wait()/notify() 其中wait执行释放锁,他们都在同步锁内完后 2.线程生命周期 3.线程释放锁的三种情况的总结 4.wait(long) 5.生产者/消费者模式是最经典的等待/通知模式(一对一,一">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,241 +154,158 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-5月27日总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿—<br>title: 5月27日总结<br>date: 2019-05-27 22:03:02</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>今天主要学的是《Java多线程编程核心技术》的第三章和第四章内容。</p>
+<p>1.等待/通知机制的实现：wait()/notify() 其中wait执行释放锁,他们都在同步锁内完后</p>
+<p>2.线程生命周期</p>
+<p>3.线程释放锁的三种情况的总结</p>
+<p>4.wait(long)</p>
+<p>5.生产者/消费者模式是最经典的等待/通知模式(一对一,一对多,多对多)</p>
+<p>6.通过管道进行线程间通信</p>
+<p>7.方法join的使用,jion()的作用是等待线程对象销毁,使所属的线程对象x正常执行run()方法中的任务,而当前线程z进行无限期的阻塞,等待线程x销毁后在继续执行线程z后面的代码.</p>
+<p>8.join(long)</p>
+<p>9.ThreadLocal的使用,是实现每一个线程都有自己的共享变量,也就是每个线程都绑定自己的值(变量的隔离性)</p>
+<p>10.类InheritableThreadLocal的使用:可以在子线程中取得父线程继承下来的值(子线程从父线程中取得值)</p>
+<hr>
+<p>第四章内容:</p>
+<p>1.ReentrantLock类:默认情况下,ReentrantLock类使用的是非公平锁</p>
+<p>2.ReentrantLock类能达到和synchronized同样的效果,且更加灵活,扩展功能更强大</p>
+<p>3.ReentrantLock类中Condition可以实现synchronized中wait()和notify()同样的功能.两者区别在于:notify()是随机选择被通知对象,而Condition可以选择性通知</p>
+<p>4.公平锁与非公平锁:公平锁表示获取锁的顺序是按照线程加锁的顺序来分配的,即先来先得的FIFP先进先出顺序;非公平锁是一种获取锁的抢占机制,是随机获得锁的,和公平锁不一样的就是先来的不一定先得到锁.</p>
+<p>5.一些ReentrantLock类中用到的方法…</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/05/03/5月3日总结/" class="archive-article-date">
-  	<time datetime="2019-05-03T14:11:09.536Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-03</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/05/27/5月27日总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/29/4月29日总结/" class="archive-article-date">
-  	<time datetime="2019-04-29T13:24:46.209Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-29</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/28/4月28日总结/" class="archive-article-date">
-  	<time datetime="2019-04-28T13:59:26.806Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-28</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/26/5月26日总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/27/4月27日总结/" class="archive-article-date">
-  	<time datetime="2019-04-27T14:13:44.208Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-27</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/26/4月26日总结/" class="archive-article-date">
-  	<time datetime="2019-04-26T13:59:29.525Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-26</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+        
+        
+    </div>
+</aside>
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/25/4月25日总结/" class="archive-article-date">
-  	<time datetime="2019-04-25T11:29:07.575Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-25</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/24/4月24日总结/" class="archive-article-date">
-  	<time datetime="2019-04-24T14:03:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-24</time>
-</a>
-        </div>
-    	 
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/24/4月24日总结/">4月24日总结</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/23/4月23日总结/" class="archive-article-date">
-  	<time datetime="2019-04-23T13:44:44.475Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-23</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/20/4月20日总结/" class="archive-article-date">
-  	<time datetime="2019-04-20T14:24:44.473Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-20</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/19/4月19日总结/" class="archive-article-date">
-  	<time datetime="2019-04-19T13:55:48.940Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-19</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/2019/">&laquo; Prev</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2019/page/3/">3</a><a class="page-number" href="/archives/2019/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2019/page/6/">6</a><a class="extend next" rel="next" href="/archives/2019/page/3/">Next &raquo;</a>
-    </nav>
+  
+
   
 
 
@@ -408,8 +329,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
