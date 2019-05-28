@@ -152,6 +152,76 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-下午学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿﻿﻿﻿﻿﻿—</p>
+<h2 id="title-下午学习笔记"><a href="#title-下午学习笔记" class="headerlink" title="title: 下午学习笔记"></a>title: 下午学习笔记</h2><p>###Java核心技术 卷Ⅰ<br><img src="/images/Java核心技术卷1.jpg" alt="“Java核心技术 卷Ⅰ”"></p>
+<ul>
+<li>如果导入两个包中名字相同的类时，在每个类名前加上完整的包名</li>
+<li>import语句不仅可以导类，还可以导入静态方法和静态域</li>
+<li>如果没有在源文件中放置package语句，这个源文件中的类就被放置在一个默认包中，默认包时一个没有名字的包</li>
+<li>如果没有指定public 或 private，这个部分（类、方法或变量）可以被同一个包中的所有方法访问，这对子变量不适合，因此变量必须显示地标记为private</li>
+<li>面向对象（oop）类设计技巧1.一定要保证数据私有2.一定要对数据初始化3.不要在类中使用过多的基本类型4.不是所有的域都需要独立的域访问器（getXxx()）和域更改器（setXxx()）5.将职责过多的类进行分解6.类名和方法名要能够体现它们的职责7.优先使用不可变的类</li>
+<li>一个对象变量可以指示多种实际类型的现象被称为多态。在运行时能够自动地选择调用哪个方法的现象称为动态绑定在Java中，对象变量时多态的，一个Employee变量既可以引用一个Employee类对象，也可以引用一个Employee类的任何一个子类对象</li>
+<li>继承–》“is a”规则，它表明子类的每个对象也是超类的对象</li>
+<li>如果将一个类声明为final，只有其中的方法自动地生成final，而不包括域</li>
+<li>包含一个或多个抽象方法的类本身必须被声明为抽象的除了抽象方法之外，抽象类还可以包含具体数据和具体方法抽象方法充当着占位的角色，它们的具体实现在子类中类及使不含抽象方法，也可以将类声明为抽象类抽象类不能被实例化，但可以创建一个具体的子类对象（父类引用指向子类对象）</li>
+<li>超类中的某些方法允许被子类访问，或允许子类的方法访问超类的某个域，为此，需要将这些方法或域声明为protected在实际应用中，谨慎使用protected属性</li>
+<li>可以使用Object类型的变量引用任何类型的对象：Object obj= new Employee()；</li>
+<li>继承的设计技巧：1.将公共操作和域放在超类2.不要使用受保护的域3.使用继承实现“is-a”关系4.除非所有继承的方法都有意义，否则不要使用继承5.再覆盖方法时，不要改变预期的行为6.使用多态，而非类型信息7.不要过多地使用反射</li>
+<li>接口中的所有方法自动地属于public，因此在接口中声明方法时，不必提供关键字public接口绝不能含有实例域接口中的域将被自动设为public static final</li>
+<li>Java中默认方法冲突优先性1.超（父）类优先   —》类与接口相比2.接口冲突，必须覆盖（重写）这个方法 —》接口与接口相比</li>
+<li>再次抛出异常与异常链try… catch 中 catch里面throw异常</li>
+<li>带资源的try语句，try块退出或存在异常时，会自动调用XXX.close()方法，关闭输入输出</li>
+<li>使用异常机制的技巧：1.异常处理不能代替简单的测试 —》只在异常情况下使用异常机制2.不要过分地细化异常  ———》将正常处理与错误处理分开3.利用异常层次结构4.不要压制异常5.早抛出，晚捕获</li>
+<li>Iterator迭代器对next方法和remove方法的调用具有互相依赖性。如果调用remove之前没有调用next将时不合法的迭代器Iterator中next()方法在到达集和尾部时将派出NoSuchElementException，因此需要在调用next之前调用hasNext方法。</li>
+<li>equals和hashCode的定义必须兼容，即如果x.equals(y)为true，x.hashCode()必须等于y.hashCode()。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/21/下午学习笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-上午学习总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
