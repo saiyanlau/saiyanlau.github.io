@@ -152,6 +152,61 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-6月30日总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿﻿﻿—<br>title: 6月30日总结<br>date: 2019-06-30 22:04:36</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>今天复习了树的知识</p>
+<p>树的基本知识：节点 满二叉树  完全二叉树等</p>
+<p>二叉树的遍历：先序遍历、中序遍历、后序遍历—&gt;看的是根节点的便利顺序</p>
+<p>相关代码！</p>
+<hr>
+<p>明天开始就是暑假冲刺了，燃烧我的查克拉！！！</p>
+<p>为了Offer！！！</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/06/30/6月30日总结/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-6月27日总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -627,65 +682,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/06/03/6月3日总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-6月2日总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: 6月2日总结<br>date: 2019-06-02 21:56:26</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>今天学习了《深入理解Java虚拟机》第三章的一部分</p>
-<hr>
-<p>1.有关GC和内存分配的需要:当需要排查各种内存溢出,内存泄漏问题时,当垃圾手机成为系统达到更高并发量的瓶颈时,需要对GC和内存分配实施必要的监控和调节</p>
-<p>2.垃圾收集器和内存分配与回收关注的是Java堆和方法区(内存动态)</p>
-<p>3.垃圾收集器在对内存分配与回收前第一件事就是要确定堆中对象哪些还”存活”,哪些”死去”</p>
-<p>4.引用计数法:给对象添加一个引用计数器,每当有一个地方引用它时,计数器值就加1,当引用失效时,计数器值就减1,任何时刻计数器为0的对象就是不可能再被使用.引用计数法实现简单,效率高,但是很难解决对象之间相互循环引用的问题</p>
-<p>5.可达性分析算法:通过一系列”GC Roots”的对象作为起始点,从这些节点开始向下搜索,搜索所走过的路径称为引用链,当一个对象到GC Roots没有任何引用链项链时,则证明此对象是不可用的(JAVA中可作为GC Roots的对象有三类…1..2..3..)</p>
-<p>6.对象引用Reference: 强引用&gt;软引用&gt;弱引用&gt;虚引用</p>
-<p>7.对象回收的两次标记过程(对象逃脱死亡): 第一次是GC Roots没有引用链时,第一次筛选;执行finalize()方法,将其放入F-Queue队列,进行第二次标记.finalize()是对象逃脱死亡的最后一次机会,只要重新与引用链上的任何一个对象建立关联即可.  注意:finalize()方法都只会被系统自动调用一次,如果对象面临下一次回收,finalize()方法不会再次执行.</p>
-<p>8.方法区(或HotSpot虚拟机中的永久代)垃圾收集:主要是回收两部分1.废弃常量(和回收Java堆中的对象类似),2.无用的类(有3种).</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/06/02/6月2日总结/">展开全文 >></a>
         </p>
       
 
