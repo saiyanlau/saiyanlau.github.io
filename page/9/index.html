@@ -152,6 +152,1188 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-中午学习总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>﻿﻿—<br>title: 中午学习总结<br>date: 2019-03-27 13:33:32</p>
+<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h4 id="使用JQuery完成页面定时弹出广告"><a href="#使用JQuery完成页面定时弹出广告" class="headerlink" title="使用JQuery完成页面定时弹出广告"></a>使用JQuery完成页面定时弹出广告</h4><p>定时器: </p>
+<p>​    setInterval     clearInterval</p>
+<p>​    setTimeout    clearTimeout</p>
+<p>显示:  img.style.display  = “block”</p>
+<p>隐藏:  img.style.display  = “none”</p>
+<p>img 对象</p>
+<p>​    style属性:  style对象</p>
+<h4 id="使用JQuery完成表格的隔行换色"><a href="#使用JQuery完成表格的隔行换色" class="headerlink" title="使用JQuery完成表格的隔行换色"></a>使用JQuery完成表格的隔行换色</h4><p>获得所有的行</p>
+<p>​    table.rows[]</p>
+<p>修改行的颜色</p>
+<p>​    row.bgColor =”red”</p>
+<p>​    row.style.backgroundColor = “black”</p>
+<p>​    row.style.background = “red”</p>
+<p>​    “background-color:red”</p>
+<p>​    “background:red”</p>
+<h4 id="使用JQuery完成复选框的全选效果"><a href="#使用JQuery完成复选框的全选效果" class="headerlink" title="使用JQuery完成复选框的全选效果"></a>使用JQuery完成复选框的全选效果</h4><p>checked属性</p>
+<p>如何获取所有复选框:</p>
+<p>​    document.getElementsByName   get Elements  By Name  数据库里面</p>
+<h4 id="使用JQuery完成省市联动效果"><a href="#使用JQuery完成省市联动效果" class="headerlink" title="使用JQuery完成省市联动效果"></a>使用JQuery完成省市联动效果</h4><p>​    JS中的数组:  [“城市”]</p>
+<p>​    new Array()</p>
+<p>​    DOM树操作:</p>
+<p>​        创建节点:  document.createElement</p>
+<p>​        创建文本节点: document.createTextNode</p>
+<p>​        添加节点:  appendChild</p>
+<h4 id="使用JQuery完成下列列表左右选择"><a href="#使用JQuery完成下列列表左右选择" class="headerlink" title="使用JQuery完成下列列表左右选择"></a>使用JQuery完成下列列表左右选择</h4><p>​    select下拉列表</p>
+<p>​    multiple 允许多选</p>
+<p>​    ondblclick : 双击事件</p>
+<p>​    for循环遍历,一边遍历一边移除出现的问题</p>
+<h4 id="使用JQuery完成表单的校验-扩展"><a href="#使用JQuery完成表单的校验-扩展" class="headerlink" title="使用JQuery完成表单的校验(扩展)"></a>使用JQuery完成表单的校验(扩展)</h4><p>​    事件:</p>
+<p>​    获得焦点事件: onfocus</p>
+<p>​    失去焦点事件: onblur</p>
+<p>​    按键抬起事件: onkeyup</p>
+<p>​    鼠标移入:  onmouseenter</p>
+<p>​    鼠标移出: onmouseout</p>
+<p>​    JS引入外部文件 : script </p>
+<h3 id="今日目标："><a href="#今日目标：" class="headerlink" title="今日目标："></a>今日目标：</h3><h4 id="掌握JQuery的基本使用"><a href="#掌握JQuery的基本使用" class="headerlink" title="掌握JQuery的基本使用"></a>掌握JQuery的基本使用</h4><h4 id="掌握JQuery的基本选择器-层次选择器"><a href="#掌握JQuery的基本选择器-层次选择器" class="headerlink" title="掌握JQuery的基本选择器,层次选择器"></a>掌握JQuery的基本选择器,层次选择器</h4><h4 id="会使用JQuery完成DOM的基本操作"><a href="#会使用JQuery完成DOM的基本操作" class="headerlink" title="会使用JQuery完成DOM的基本操作"></a>会使用JQuery完成DOM的基本操作</h4><h3 id="1-使用JQuery完成页面定时弹出广告"><a href="#1-使用JQuery完成页面定时弹出广告" class="headerlink" title="1. 使用JQuery完成页面定时弹出广告"></a>1. 使用JQuery完成页面定时弹出广告</h3><h4 id="1-1-需求分析："><a href="#1-1-需求分析：" class="headerlink" title="1.1 需求分析："></a>1.1 需求分析：</h4><p>当用户打开界面，3秒钟之后弹出广告，这个广告显示5秒钟，隐藏广告</p>
+<h4 id="1-2-技术分析"><a href="#1-2-技术分析" class="headerlink" title="1.2 技术分析"></a>1.2 技术分析</h4><p>定时器: setTimeout </p>
+<p>显示和隐藏:  style.display = “block/none”</p>
+<p>什么JQuery:</p>
+<p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（<em>或JavaScript框架</em>）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</p>
+<p>jQuery的核心特性可以总结为：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。jQuery兼容各种主流浏览器，如IE 6.0+、FF 1.5+、Safari 2.0+、Opera 9.0+等</p>
+<p>JQuery的作用:</p>
+<p>​    1. 写更少的代码,做更多的事情: write Less ,Do more</p>
+<pre><code>2. 将我们页面的JS代码和HTML页面代码进行分离
+</code></pre><p>为什么学习JQuery:</p>
+<p>​    提高我们的工作效率</p>
+<p>JQ的入门</p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span>
+<span class="undefined">            //js文档加载完成的事件</span>
+<span class="undefined">            window.onload = function(){</span>
+<span class="undefined">                alert("window.onload   111");</span>
+<span class="undefined">            }</span>
+<span class="undefined"></span>
+<span class="undefined">            window.onload = function(){</span>
+<span class="undefined">                alert("window.onload   222");</span>
+<span class="undefined">            }</span>
+<span class="undefined"></span>
+<span class="undefined">            /*文档加载完成的事件*/</span>
+<span class="undefined">            jQuery(document).ready(function(){</span>
+<span class="undefined">                 alert("jQuery(document).ready(function()");</span>
+<span class="undefined">            });</span>
+<span class="undefined">            /*</span>
+<span class="undefined">                 jQuery  简写成 $</span>
+<span class="undefined">             */</span>
+<span class="undefined">            $(document).ready(function(){</span>
+<span class="undefined">                 alert("$(document).ready(function()");</span>
+<span class="undefined">            });</span>
+<span class="undefined"></span>
+<span class="undefined">            /*</span>
+<span class="undefined">                最简单的写法 </span>
+<span class="undefined">            */</span>
+<span class="undefined">            $(function(){</span>
+<span class="undefined">                alert("$(function(){");</span>
+<span class="undefined">            });</span>
+<span class="undefined"></span>
+<span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+</code></pre>
+<p>【JQ中根据ID查找元素】</p>
+<pre><code class="html">全都是根据选择器去找的
+#ID{}
+.类名{}
+$(&quot;#ID的名称&quot;)
+</code></pre>
+<p>【JQ和JS之间的转换】</p>
+<ul>
+<li>JQ对象,只能调用JQ的属性和方法</li>
+<li>JS对象 只能调用JS的属性和方法</li>
+</ul>
+<pre><code class="html">function changeJS(){
+                var div = document.getElementById(&quot;div1&quot;);
+//                div.innerHTML = &quot;JS成功修改了内容&quot;
+                //将JS对象转成JQ对象
+                $(div).html(&quot;转成JQ对象来修改内容&quot;)
+            }
+
+            $(function(){
+                //给按钮绑定事件
+                $(&quot;#btn2&quot;).click(function(){
+                    //找到div1
+//                    $(&quot;#div1&quot;).html(&quot;JQ方式成功修改了内容&quot;);
+                    //将JQ对象转成JS对象来调用
+                    var $div = $(&quot;#div1&quot;);
+//                    var jsDiv = $div.get(0);
+                    var jsDiv = $div[0];
+                    jsDiv.innerHTML=&quot;jq转成JS对象成功&quot;;
+                });
+            });
+</code></pre>
+<p>JQ的开发步骤: (将我们页面的JS代码和HTML页面代码进行分离)</p>
+<pre><code>1. 导入JQ相关的文件
+2.  文档加载完成事件: $(function)  : 页面初始化的操作: 绑定事件, 启动页面定时器
+3. 确定相关操作的事件
+4. 事件触发函数
+5. 函数里面再去操作相关的元素
+</code></pre><p>显示和隐藏  img.style.display</p>
+<p>【JQ中的动画效果】</p>
+<pre><code class="javascript">show()
+hide()
+slideUp
+slideDown
+fadeIn
+fadeOut
+animate : 自定义动画
+</code></pre>
+<h4 id="1-3-步骤分析："><a href="#1-3-步骤分析：" class="headerlink" title="1.3 步骤分析："></a>1.3 步骤分析：</h4><ol>
+<li>导入JQ的文件</li>
+<li>编写JQ的文档加载事件</li>
+<li>启动定时器 setTimeout(“”,3000);</li>
+<li>编写显示广告的函数</li>
+<li>在显示广告里面再启动一个定时器</li>
+<li>编写隐藏广告的函数</li>
+</ol>
+<h4 id="1-4-代码实现"><a href="#1-4-代码实现" class="headerlink" title="1.4 代码实现"></a>1.4 代码实现</h4><pre><code class="html"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span>
+<span class="javascript">            <span class="comment">//显示广告</span></span>
+<span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">showAd</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                $(<span class="string">"#img1"</span>).slideDown(<span class="number">2000</span>);</span>
+<span class="javascript">                setTimeout(<span class="string">"hideAd()"</span>,<span class="number">3000</span>);</span>
+<span class="undefined">            }</span>
+<span class="javascript">            <span class="comment">//隐藏广告</span></span>
+<span class="javascript">            <span class="function"><span class="keyword">function</span> <span class="title">hideAd</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                $(<span class="string">"#img1"</span>).slideUp(<span class="number">2000</span>);</span>
+<span class="undefined">            }</span>
+<span class="javascript">            $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                setTimeout(<span class="string">"showAd()"</span>,<span class="number">3000</span>);</span>
+<span class="undefined">            });</span>
+<span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+</code></pre>
+<h3 id="JQuery中的选择器"><a href="#JQuery中的选择器" class="headerlink" title="JQuery中的选择器"></a>JQuery中的选择器</h3><p>让我们能够更加精确找到我们要操作的元素    </p>
+<h5 id="基本选择器"><a href="#基本选择器" class="headerlink" title="基本选择器"></a>基本选择器</h5><ul>
+<li>ID选择器 :     #ID的名称</li>
+<li>类选择器:     以 . 开头  .类名</li>
+<li>元素选择器:    标签的名称</li>
+<li>通配符选择器:   * </li>
+<li>选择器,选择器:  选择器1,选择器2</li>
+</ul>
+<h5 id="基本选择器的案例"><a href="#基本选择器的案例" class="headerlink" title="基本选择器的案例"></a>基本选择器的案例</h5><pre><code class="javascript">&lt;!--
+        - ID选择器 :     #ID的名称
+        - 类选择器:     以 . 开头  .类名
+        - 元素选择器:    标签的名称
+        - 通配符选择器:   * 
+        - 选择器,选择器:  选择器<span class="number">1</span>,选择器<span class="number">2</span>
+    --&gt;
+    &lt;script&gt;
+        <span class="comment">//文档加载事件,页面初始化的操作</span>
+        $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+            <span class="comment">//初始化操作: 给按钮绑定事件</span>
+            $(<span class="string">"#btn1"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+                $(<span class="string">"#two"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    
+            });
+
+            <span class="comment">//找出mini类的所有元素</span>
+            $(<span class="string">"#btn2"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+                $(<span class="string">".mini"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    
+            });
+            $(<span class="string">"#btn3"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+                $(<span class="string">"div"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    
+            });
+            $(<span class="string">"#btn4"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+                $(<span class="string">"*"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);
+
+            });
+            <span class="comment">/*选择器分组*/</span>
+
+            <span class="comment">//找出mini类 和 span元素</span>
+            $(<span class="string">"#btn5"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+                $(<span class="string">".mini,span"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);
+            });
+        });
+    &lt;<span class="regexp">/script&gt;</span>
+</code></pre>
+<h5 id="JQ中的层级选择器"><a href="#JQ中的层级选择器" class="headerlink" title="JQ中的层级选择器"></a>JQ中的层级选择器</h5><ul>
+<li>子元素选择器:   选择器1 &gt; 选择器2</li>
+<li>后代选择器:  选择器1 儿孙</li>
+<li>相邻兄弟选择器 :  选择器1 + 选择器2 : 找出紧挨着的一个弟弟</li>
+<li>找出所有弟弟:  选择器1~ 选择器2   : 找出所有的弟弟</li>
+</ul>
+<pre><code class="html"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span>
+<span class="javascript">            <span class="comment">//文档加载事件,页面初始化的操作</span></span>
+<span class="javascript">            $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                <span class="comment">//初始化操作: 给按钮绑定事件</span></span>
+<span class="javascript">                <span class="comment">//找出body下面的子div   </span></span>
+<span class="javascript">                $(<span class="string">"#btn1"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                    $(<span class="string">"body &gt; div"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">                });</span>
+<span class="javascript">                <span class="comment">//找出body下面的所有div</span></span>
+<span class="javascript">                $(<span class="string">"#btn2"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                    $(<span class="string">"body div"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">                });</span>
+<span class="javascript">                $(<span class="string">"#btn3"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                    $(<span class="string">"#one+div"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">                });</span>
+<span class="javascript">                $(<span class="string">"#btn4"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">                    $(<span class="string">"#two~div"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">                });</span>
+<span class="undefined"></span>
+<span class="undefined">            });</span>
+<span class="undefined">        </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+</code></pre>
+<h5 id="JQ中的基本过滤器"><a href="#JQ中的基本过滤器" class="headerlink" title="JQ中的基本过滤器"></a>JQ中的基本过滤器</h5><pre><code class="html"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span>
+<span class="javascript">    $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">        /<span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span></span>
+<span class="javascript">    <span class="comment">//文档加载事件,页面初始化的操作</span></span>
+<span class="javascript">    $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="undefined"></span>
+<span class="javascript">        <span class="comment">//初始化操作: 给按钮绑定事件</span></span>
+<span class="javascript">        <span class="comment">//过滤出所有div中第一个元素</span></span>
+<span class="javascript">        $(<span class="string">"#btn1"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">            $(<span class="string">"div:first"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">        });</span>
+<span class="undefined"></span>
+<span class="javascript">        <span class="comment">//过滤出所有div中偶数位的div</span></span>
+<span class="javascript">        $(<span class="string">"#btn2"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">            $(<span class="string">"div:even"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">        });</span>
+<span class="javascript">        $(<span class="string">"#btn3"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">            $(<span class="string">"div:odd"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">        });</span>
+<span class="javascript">        $(<span class="string">"#btn4"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">            $(<span class="string">"div:gt(2)"</span>).css(<span class="string">"background-color"</span>,<span class="string">"palegreen"</span>);                    </span>
+<span class="undefined">        });</span>
+<span class="undefined"></span>
+<span class="undefined">    });</span>
+<span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+</code></pre>
+<h5 id="JQ中的属性选择器"><a href="#JQ中的属性选择器" class="headerlink" title="JQ中的属性选择器"></a>JQ中的属性选择器</h5><pre><code class="html">$(function(){
+        //找到有name属性的input
+        $("#btn1").click(function(){
+            $("input[name]").attr("checked",true);
+        });
+        $("#btn2").click(function(){
+            $("input[name='accept']").attr("checked",true);
+        });
+        $("#btn3").click(function(){
+            $("input[name='newsletter'][value='Hot Fuzz']").attr("checked",true);
+        });
+    });
+</code></pre>
+<h5 id="JQ中的表单过滤器"><a href="#JQ中的表单过滤器" class="headerlink" title="JQ中的表单过滤器"></a>JQ中的表单过滤器</h5><pre><code class="html"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span>
+<span class="javascript">  <span class="comment">//1.文档加载事件    </span></span>
+<span class="javascript">  $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{</span>
+<span class="javascript">    $(<span class="string">":text"</span>).css(<span class="string">"background-color"</span>,<span class="string">"pink"</span>);</span>
+<span class="undefined">  });</span>
+<span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+</code></pre>
+<p>上午的内容回顾:</p>
+<p>什么是JQ:  write less , do more: 写更少的代码,做更多的事</p>
+<p>​    javascript函数库</p>
+<p>1.11版本</p>
+<p>定时器:</p>
+<p>动画效果:</p>
+<p>​    show : 显示</p>
+<p>​    hide : 隐藏</p>
+<p>​    slideDown: 向下滑动</p>
+<p>​    slideUp: 向上滑动</p>
+<p>​    fadeIn</p>
+<p>​    fadeOut</p>
+<p>JQ选择器:</p>
+<p>基本选择器:</p>
+<p>​    ID选择器:  #ID的名字</p>
+<p>​    类选择器:  .类名</p>
+<p>​    元素选择器:   标签名称</p>
+<p>​    通配符选择器:  *</p>
+<p>​    选择器分组:  选择器1,选择器2</p>
+<p>层级选择器:</p>
+<p>​    后代选择器:  选择器1 儿孙</p>
+<p>​    子元素选择器: 选择器1 &gt; 儿子</p>
+<p>​    相邻兄弟选择器:  选择器1 + 选择器2  找出紧挨着它的弟弟</p>
+<p>​    所有弟弟选择器:  选择器1~选择器2  找出所有弟弟</p>
+<p>基本过滤器:</p>
+<p>​    选择器:first  : 找出的是第一个</p>
+<p>​    :last  </p>
+<p>​    :even   找出索引为偶数</p>
+<p>​    :odd    找出奇数索引</p>
+<p>​    :gt(index) :  大于索引</p>
+<p>​    :lt(index)   小于</p>
+<p>​    :eq(index)  等于</p>
+<p>属性选择器:</p>
+<p>​    选择器[href]  : 单个属性</p>
+<pre><code class="html">选择器[href][title] : 多个属性
+选择器[href][title=&#39;test&#39;] : 多个属性,包含值
+</code></pre>
+<p>表单过滤器:</p>
+<p>​    :input   找出所有输入项:  input  textarea  select </p>
+<p>​    :text </p>
+<p>​    :password  </p>
+<p>表单对象属性:</p>
+<p>​    找出select中被选中的那一项:</p>
+<p>​    option:selected</p>
+<p>JQ的开发步骤:</p>
+<pre><code>1. 导入JQ相关的包
+2. 文档加载文成的事件:  页面初始化:  绑定事件, 启动定时器
+3.  确定事件
+4. 实现事件索要触发的函数
+5. 函数里面再去操作我们要操作的元素
+</code></pre><h3 id="使用JQ完成表格的隔行换色"><a href="#使用JQ完成表格的隔行换色" class="headerlink" title="使用JQ完成表格的隔行换色"></a>使用JQ完成表格的隔行换色</h3><h4 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析:"></a>需求分析:</h4><p>在我们的实际开发过程中,我们的表格如果所有的行都是一样的话,很容易看花眼,所以我们需要让我们的表格隔行换色</p>
+<h4 id="技术分析"><a href="#技术分析" class="headerlink" title="技术分析:"></a>技术分析:</h4><p>获取所有行 table.rows</p>
+<p>遍历所有行</p>
+<p>根据行号去修改每一行的背景颜色: bgColor</p>
+<p>​    style.backgroundColor = “red”</p>
+<h4 id="步骤分析"><a href="#步骤分析" class="headerlink" title="步骤分析:"></a>步骤分析:</h4><ol>
+<li>导入JQ的包</li>
+<li>文档加载完成函数: 页面初始化</li>
+<li>获得所有的行 :   元素选择器</li>
+<li>根据行号去修改颜色</li>
+</ol>
+<h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现:"></a>代码实现:</h4><pre><code class="html">    $(function(){
+                //获得所有的行 :   元素选择器
+                $("tbody &gt; tr:even").css("background-color","#CCCCCC");
+                //修改基数行
+                $("tbody &gt; tr:odd").css("background-color","#FFF38F");
+//                $("tbody &gt; tr").css("background-color","#FFF38F");
+
+
+            });
+</code></pre>
+<h3 id="使用JQuery完成表单的全选全不选功能"><a href="#使用JQuery完成表单的全选全不选功能" class="headerlink" title="使用JQuery完成表单的全选全不选功能"></a>使用JQuery完成表单的全选全不选功能</h3><h4 id="需求分析-1"><a href="#需求分析-1" class="headerlink" title="需求分析"></a>需求分析</h4><p>​    在我们对表格处理的时,有些情况下,我们需要对表格进行批量处理,</p>
+<h4 id="技术分析-1"><a href="#技术分析-1" class="headerlink" title="技术分析:"></a>技术分析:</h4><h4 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现:"></a>代码实现:</h4><h3 id="使用JQ完成省市联动效果"><a href="#使用JQ完成省市联动效果" class="headerlink" title="使用JQ完成省市联动效果"></a>使用JQ完成省市联动效果</h3><h4 id="需求分析-2"><a href="#需求分析-2" class="headerlink" title="需求分析:"></a>需求分析:</h4><p>​    在我们的注册表单中,通常我们需要知道用户的籍贯,需要一个给用选择的项,当用户选中了省份之后,列出省下面所有的城市</p>
+<h4 id="技术分析-2"><a href="#技术分析-2" class="headerlink" title="技术分析:"></a>技术分析:</h4><ol>
+<li><p>准备工作 : 城市信息的数据</p>
+</li>
+<li><p>添加节点 :  appendChild (JS)</p>
+<ol>
+<li>append  :  添加子元素到末尾</li>
+<li>appendTo  : 给自己找一个爹,将自己添加到别人家里</li>
+<li>prepend : 在子元素前面添加</li>
+<li>after :   在自己的后面添加一个兄弟</li>
+</ol>
+</li>
+<li><p>遍历的操作:</p>
+<p>​    </p>
+</li>
+</ol>
+<h4 id="步骤分析-1"><a href="#步骤分析-1" class="headerlink" title="步骤分析:"></a>步骤分析:</h4><ol>
+<li>导入JQ的文件</li>
+<li>文档加载事件:页面初始化</li>
+<li>进一步确定事件:  change事件</li>
+<li>函数: 得到当前选中省份</li>
+<li>得到城市, 遍历城市数据</li>
+<li>将遍历出来的城市添加到城市的select中</li>
+</ol>
+<h4 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现:"></a>代码实现:</h4><pre><code class="javascript">$(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+                $(<span class="string">"#province"</span>).change(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+<span class="comment">//                    alert(this.value);</span>
+                    <span class="comment">//得到城市信息</span>
+                    <span class="keyword">var</span> cities = provinces[<span class="keyword">this</span>.value];
+                    <span class="comment">//清空城市select中的option</span>
+                    <span class="comment">/*var $city = $("#city");</span>
+<span class="comment">                    //将JQ对象转成JS对象</span>
+<span class="comment">                    var citySelect = $city.get(0)</span>
+<span class="comment">                    citySelect.options.length = 0;*/</span>
+
+                    $(<span class="string">"#city"</span>).empty();  <span class="comment">//采用JQ的方式清空</span>
+                    <span class="comment">//遍历城市数据</span>
+                    $(cities).each(<span class="function"><span class="keyword">function</span>(<span class="params">i,n</span>)</span>{
+                        $(<span class="string">"#city"</span>).append(<span class="string">"&lt;option&gt;"</span>+n+<span class="string">"&lt;/option&gt;"</span>);
+                    });
+                });
+            });
+</code></pre>
+<h4 id="使用JQ完成下拉列表左右选择"><a href="#使用JQ完成下拉列表左右选择" class="headerlink" title="使用JQ完成下拉列表左右选择"></a>使用JQ完成下拉列表左右选择</h4><h4 id="需求分析-3"><a href="#需求分析-3" class="headerlink" title="需求分析"></a>需求分析</h4><p>我们的商品通常包含已经有了的, 还有没有的,现在我们需要有一个页面用于动态编辑这些商品</p>
+<h4 id="技术分析-3"><a href="#技术分析-3" class="headerlink" title="技术分析"></a>技术分析</h4><h4 id="步骤分析-2"><a href="#步骤分析-2" class="headerlink" title="步骤分析"></a>步骤分析</h4><pre><code>1. 导入JQ的文件
+2. 文档加载函数 :页面初始化
+3.确定事件 :　点击事件　onclick
+4. 事件触发函数
+1. 移动被选中的那一项到右边
+</code></pre><h4 id="代码实现-3"><a href="#代码实现-3" class="headerlink" title="代码实现"></a>代码实现</h4><pre><code class="javascript">
+&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"../js/jquery-1.11.0.js"</span> &gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span>
+&lt;script&gt;
+    $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+        $(<span class="string">"#a1"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+            <span class="comment">//找到被选中的那一项</span>
+            <span class="comment">//将被选中项添加到右边</span>
+            $(<span class="string">"#rightSelect"</span>).append($(<span class="string">"#leftSelect option:selected"</span>));
+        });
+
+        <span class="comment">//将左边所有商品移动到右边</span>
+        $(<span class="string">"#a2"</span>).click(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>{
+            $(<span class="string">"#rightSelect"</span>).append($(<span class="string">"#leftSelect option"</span>));
+        });
+    });
+&lt;<span class="regexp">/script&gt;</span>
+</code></pre>
+<h4 id="今天内容总结"><a href="#今天内容总结" class="headerlink" title="今天内容总结:"></a>今天内容总结:</h4><p>定时器</p>
+<p>动画效果: show  hide  slideDown  slideUp fadeIn  fadeOut  animate</p>
+<p>基本选择器:</p>
+<p>​    ID选择器: #ID名称</p>
+<p>​    类选择器: .类名</p>
+<p>​    元素选择器: 元素/标签名称</p>
+<p>​    通配符选择器:  *  找出所有页面元素 包含页面上所有的标签</p>
+<p>​    选择器分组 :   选择器1, 选择器2      [选择器1,选择器2]</p>
+<p>层级选择器:</p>
+<p>​    后代选择器:  选择器1 选择器2  找出所有的后代,儿子孙子曾孙</p>
+<p>​    子元素选择器: 选择器1 &gt;选择器2  找出所有儿子</p>
+<p>​    相邻兄弟选择器:  选择器1+选择器2  : 找出紧挨着自己那个弟弟</p>
+<p>​    兄弟选择器 :　　　选择器1~选择器2  :  找出所有的弟弟</p>
+<p>属性选择器:</p>
+<p>​    选择器[属性名称]</p>
+<pre><code class="html">选择器[属性名称][属性名名]
+选择器[属性名称=&#39;属性值&#39;][属性名称=&#39;属性值&#39;][属性名称=&#39;属性值&#39;]
+</code></pre>
+<p>表单选择器:</p>
+<p>​    :input   找出所有的输入项 : 不单单找出input  textarea select </p>
+<p>​    :text  找出type类型为 text</p>
+<p>​    :password</p>
+<p>基本过滤器:</p>
+<p>​    :even</p>
+<p>​    :odd</p>
+<p>​    :gt</p>
+<p>​    :lt</p>
+<p>​    :eq</p>
+<p>​    :first</p>
+<p>​    :last</p>
+<p>表单对象属性:</p>
+<p>​    :selected</p>
+<p>​    :checked</p>
+<pre><code class="html">$(function)  : 文档加载完成的事件
+css()  :     修改css样式
+prop() :    修改属性/ 获取属性
+html() :    修改innerHTML
+
+append :     给自己添加子节点
+appendTo :  将自己添加到别人家,给自己找一个爹
+prepend :   在自己最前面添加子节点
+after    :   在自己后面添加一个兄弟
+empty    :   清空所有子节点
+
+$(cities).each(function(i,n){
+
+})
+
+$.each(arr,function(i,n){
+
+});
+
+了解, 熟悉, 熟练, 精通 
+
+经过一个项目,将所有学过串起来
+</code></pre>
+<h4 id="使用JQ完成表单的校验-扩展"><a href="#使用JQ完成表单的校验-扩展" class="headerlink" title="使用JQ完成表单的校验(扩展)"></a>使用JQ完成表单的校验(扩展)</h4><h4 id="需求分析-4"><a href="#需求分析-4" class="headerlink" title="需求分析"></a>需求分析</h4><p>在用户提交表单的时候, 我们最好是能够在用户数据提交给服务器之前去做一次校验,防止服务器压力过大,并且需要给用户一个友好提示</p>
+<h4 id="技术分析-4"><a href="#技术分析-4" class="headerlink" title="技术分析"></a>技术分析</h4><ul>
+<li>trigger</li>
+<li>triggerHandler</li>
+<li>is()</li>
+</ul>
+<h4 id="步骤分析-3"><a href="#步骤分析-3" class="headerlink" title="步骤分析"></a>步骤分析</h4><ol>
+<li>首先给必填项,添加尾部添加一个小红点</li>
+<li>获取用户输入的信息,做相应的校验</li>
+<li>事件: 获得焦点, 失去焦点, 按键抬起</li>
+<li>表单提交的事件</li>
+</ol>
+<h4 id="代码实现-4"><a href="#代码实现-4" class="headerlink" title="代码实现"></a>代码实现</h4><h2 id="BootStrap"><a href="#BootStrap" class="headerlink" title="BootStrap"></a>BootStrap</h2><h3 id="今日任务"><a href="#今日任务" class="headerlink" title="今日任务"></a>今日任务</h3><h4 id="使用JQuery发送请求局部刷新页面"><a href="#使用JQuery发送请求局部刷新页面" class="headerlink" title="使用JQuery发送请求局部刷新页面"></a>使用JQuery发送请求局部刷新页面</h4><h4 id="使用BootStrap制作一个响应式的页面"><a href="#使用BootStrap制作一个响应式的页面" class="headerlink" title="使用BootStrap制作一个响应式的页面"></a>使用BootStrap制作一个响应式的页面</h4><h4 id="使用BootStrap制作网站的首页"><a href="#使用BootStrap制作网站的首页" class="headerlink" title="使用BootStrap制作网站的首页"></a>使用BootStrap制作网站的首页</h4><h3 id="教学目标"><a href="#教学目标" class="headerlink" title="教学目标"></a>教学目标</h3><h4 id="掌握什么是响应式及响应式的原理"><a href="#掌握什么是响应式及响应式的原理" class="headerlink" title="掌握什么是响应式及响应式的原理"></a>掌握什么是响应式及响应式的原理</h4><h4 id="掌握BootStrap的栅格系统"><a href="#掌握BootStrap的栅格系统" class="headerlink" title="掌握BootStrap的栅格系统"></a>掌握BootStrap的栅格系统</h4><h4 id="了解BootStrap的其他组件及JS控件"><a href="#了解BootStrap的其他组件及JS控件" class="headerlink" title="了解BootStrap的其他组件及JS控件"></a>了解BootStrap的其他组件及JS控件</h4><p>上次课内容:</p>
+<p>什么JQ : write less do more 写更少的代码,做更多的事情  javascript函数库</p>
+<p>基本选择器:</p>
+<p>​    ID选择器: #ID名称</p>
+<p>​    类选择器: .类名</p>
+<p>​    元素选择器: 元素的名称</p>
+<p>​    通配符选择器:  *  找出页面上所有元素</p>
+<p>​    选择器分组: 选择器1,选择器2     [选择器1 , 选择器2]  </p>
+<p>层级选择器:</p>
+<p>​    后代选择器: 选择器1 选择器2  找出来的选择器1 下面的所有选择器2  子孙</p>
+<p>​    子元素选择器: 选择器1 &gt; 选择器2   找出来的是所有的子节点  儿子</p>
+<p>​    相邻兄弟选择器: 选择器1+选择器2    找出来的紧挨着自己的弟弟</p>
+<p>​    兄弟选择器:   选择器1~选择器2    找出所有的弟弟</p>
+<p>​        (找出所有兄弟:   $(“div”).siblings()    )</p>
+<p>属性选择器:</p>
+<pre><code class="html">选择器 div
+选择器[title]
+选择器[title=&#39;test&#39;]
+选择器[title=&#39;test&#39;][style]
+</code></pre>
+<p>基本的过滤器:    选择器:过滤器   $(“div:first”)</p>
+<p>​    :first : 找出第一个元素</p>
+<p>​    :last  找出最后一个元素</p>
+<p>​    :even   找出偶数索引</p>
+<p>​    :odd   找出奇数</p>
+<p>​    :gt(index)   greater-than大于</p>
+<p>​    :lt(index)    小于</p>
+<p>​    :eq(index)  等于</p>
+<p>表单选择器:</p>
+<p>​    :input  找出所有的输入项,  textarea select button</p>
+<p>​    :password</p>
+<p>​    :text</p>
+<p>​    :radio</p>
+<p>表单对象属性的过滤器</p>
+<p>​    :selected</p>
+<p>​    :checked</p>
+<p>常用函数:</p>
+<p>​    属性prop()    properties</p>
+<p>​        如果传入一个参数  就是获取</p>
+<p>​    prop(“src”,”../img/1.jpg”);  </p>
+<p>​        设置图片路径</p>
+<p>​    attr : 操作一些自定义的属性  <img abc="123"></p>
+<p>​    prop: 通常是用来操作元素固有属性的 ,建议大家使用prop来操作属性</p>
+<p>​    css() ; 修改css样式</p>
+<p>​    addClass()  : 添加一个class样式</p>
+<p>​    removeClass() : 移除</p>
+<p>​    </p>
+<p>​    blur : 绑定失去焦点</p>
+<p>​    focus: 绑定获得焦点事件</p>
+<p>​    click:</p>
+<p>​    dblclick</p>
+<p>​    change</p>
+<p>​    </p>
+<p>​    append    :  给自己添加儿子</p>
+<p>​    appendTo :  把自己添加到别人家</p>
+<p>​    prepend :  在自己子节点最前面添加子节点</p>
+<p>​    after  : 在自己后面添加一个兄弟</p>
+<p>​    before: 在自己前面添加一个兄弟</p>
+<p>​    </p>
+<p>​    $(“数组对象”).each(function(index,data))</p>
+<p>​    $.each(arr,function(index,data))</p>
+<p>​    </p>
+<h3 id="表单校验案例"><a href="#表单校验案例" class="headerlink" title="表单校验案例"></a>表单校验案例</h3><h4 id="技术分析-5"><a href="#技术分析-5" class="headerlink" title="技术分析"></a>技术分析</h4><ul>
+<li>trigger  :  触发事件,但是会执行类似浏览将光标移到输入框内的这种浏览器默认行为</li>
+<li>triggerHandler : 仅仅只会触发事件所对应的函数</li>
+<li>is()</li>
+</ul>
+<h4 id="步骤分析-4"><a href="#步骤分析-4" class="headerlink" title="步骤分析"></a>步骤分析</h4><ol>
+<li>首先给必填项,添加尾部添加一个小红点</li>
+<li>获取用户输入的信息,做相应的校验</li>
+<li>事件: 获得焦点, 失去焦点, 按键抬起</li>
+<li>表单提交的事件</li>
+</ol>
+<h4 id="代码实现-5"><a href="#代码实现-5" class="headerlink" title="代码实现"></a>代码实现</h4><pre><code class="html">
+</code></pre>
+<h3 id="使用JQuery发送请求局部刷新页面-1"><a href="#使用JQuery发送请求局部刷新页面-1" class="headerlink" title="使用JQuery发送请求局部刷新页面"></a>使用JQuery发送请求局部刷新页面</h3><p>​    数据交换格式:</p>
+<p>​        json</p>
+<p>​        xml</p>
+<p>​    </p>
+<ul>
+<li><p>什么是JSON</p>
+<p>[JSON] 是一种轻量级的数据交换格式。它基于[ECMAScript]的一个子集。 JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括[C]、C++、[C#]、[Java]、JavaScript、[Perl]、[Python]等）。这些特性使JSON成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成(一般用于提升网络传输速率)。</p>
+</li>
+<li><p>JSON格式</p>
+<p>​    JSON对象</p>
+<pre><code class="json">{ key1:value}   
+{<span class="attr">"username"</span>:<span class="string">"zhangsan"</span>,<span class="attr">"password"</span>:<span class="string">"123"</span>}
+</code></pre>
+<p>​    JSON数组</p>
+<pre><code class="json">[{ key1:value},{ key1:value},{ key1:value}]
+</code></pre>
+<p>​</p>
+</li>
+</ul>
+<h3 id="使用BootStrap开发一个响应式的页面出来"><a href="#使用BootStrap开发一个响应式的页面出来" class="headerlink" title="使用BootStrap开发一个响应式的页面出来"></a>使用BootStrap开发一个响应式的页面出来</h3><h4 id="需求分析-5"><a href="#需求分析-5" class="headerlink" title="需求分析"></a>需求分析</h4><p>开发一套响应式页面.让他能够在各种设备上显示正常,提升用户体验</p>
+<h4 id="技术分析-6"><a href="#技术分析-6" class="headerlink" title="技术分析"></a>技术分析</h4><h5 id="BootStap概述"><a href="#BootStap概述" class="headerlink" title="BootStap概述"></a>BootStap概述</h5><ul>
+<li><p>什么是BootStrap</p>
+<p>​</p>
+</li>
+<li><p>BootStrap有什么作用</p>
+<ul>
+<li>复制粘贴, 能够提高开发人员的工作效率</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>什么是响应式页面</li>
+</ul>
+<ul>
+<li><p>适应不同的分辨率显示不同样式,提高用户的体验</p>
+<p>​</p>
+</li>
+</ul>
+<ul>
+<li>BootStrap的中文网<ul>
+<li><a href="http://www.bootcss.com" target="_blank" rel="noopener">http://www.bootcss.com</a></li>
+</ul>
+</li>
+<li>下载BootStrap</li>
+<li>BootStrap结构<ul>
+<li>全局CSS<ul>
+<li>bootStrap中已经定义好了一套CSS的样式表</li>
+</ul>
+</li>
+<li>组件<ul>
+<li>BootStrap定义的一套按钮,导航条等组件</li>
+</ul>
+</li>
+<li>JS插件<ul>
+<li>BootStrap定义了一套JS的插件,这些插件已经默认实现了很多种效果</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="BootStrap的入门开发"><a href="#BootStrap的入门开发" class="headerlink" title="BootStrap的入门开发"></a>BootStrap的入门开发</h5><ul>
+<li>引入相关的头文件</li>
+</ul>
+<pre><code class="html"><span class="comment">&lt;!-- 最新版本的 Bootstrap 核心 CSS 文件 --&gt;</span>
+<span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"../css/bootstrap.css"</span> /&gt;</span>
+
+<span class="comment">&lt;!--需要引入JQuery--&gt;</span>
+<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"../js/jquery-1.11.0.js"</span> &gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+
+<span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span>
+<span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"../js/bootstrap.js"</span> &gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+
+<span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span>
+</code></pre>
+<ul>
+<li>BootStrap的布局容器</li>
+</ul>
+<p><code>.container</code> 类用于固定宽度并支持响应式布局的容器。</p>
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+  ...
+&lt;/div&gt;
+</code></pre><p><code>.container-fluid</code> 类用于 100% 宽度，占据全部视口（viewport）的容器。</p>
+<pre><code>&lt;div class=&quot;container-fluid&quot;&gt;
+  ...
+&lt;/div&gt;
+</code></pre><p>校验表单扩展:</p>
+<p>trigger  : 触发浏览器默认行为</p>
+<p>triggerHandler : 不会触发</p>
+<p>is : 判断</p>
+<p>find : 查找</p>
+<p>老黄历:</p>
+<p>什么json: 轻量级的数据交换格式</p>
+<p>json对象:  {“username”:”zhangsan”}</p>
+<p>json数组: [ {“username”:”zhangsan”}, {“username”:”zhangsan”}, {“username”:”zhangsan”}]</p>
+<p>ajax异步请求: </p>
+<p>​    同步和异步</p>
+<ul>
+<li><p>row</p>
+<p> Bootstrap 栅格系统的工作原理：</p>
+<ul>
+<li>“行（row）”必须包含在 <code>.container</code> （固定宽度）或 <code>.container-fluid</code> （100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）。</li>
+<li>通过“行（row）”在水平方向创建一组“列（column）”。</li>
+<li>你的内容应当放置于“列（column）”内，并且，只有“列（column）”可以作为行（row）”的直接子元素。</li>
+<li>类似 <code>.row</code> 和 <code>.col-xs-4</code> 这种预定义的类，可以用来快速创建栅格布局。Bootstrap 源码中定义的 mixin 也可以用来创建语义化的布局。</li>
+<li>通过为“列（column）”设置 <code>padding</code> 属性，从而创建列与列之间的间隔（gutter）。通过为 <code>.row</code> 元素设置负值 <code>margin</code> 从而抵消掉为 <code>.container</code> 元素设置的 <code>padding</code>，也就间接为“行（row）”所包含的“列（column）”抵消掉了<code>padding</code></li>
+</ul>
+<p>​</p>
+</li>
+<li><p>BootStrap的栅格系统</p>
+<ul>
+<li>响应式设计: 这种设计依赖于CSS3中的媒体查询</li>
+<li>栅格样式:<ul>
+<li>设备分辨率大于1200 使用lg样式</li>
+<li>设备分辨率大于992 &lt; 1200 使用md样式</li>
+<li>设备分辨率大于768 &lt; 992  使用sm样式</li>
+<li>设备分辨率小于768使用xs样式</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>BootStrap的全局CSS</p>
+<ul>
+<li>定义了一套CSS<ul>
+<li>对页面中的元素进行定义</li>
+<li>列表元素,表单,按钮,图片…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="步骤分析-5"><a href="#步骤分析-5" class="headerlink" title="步骤分析"></a>步骤分析</h4><h4 id="代码实现-6"><a href="#代码实现-6" class="headerlink" title="代码实现"></a>代码实现</h4><h4 id="使用BootStrap布局网站首页"><a href="#使用BootStrap布局网站首页" class="headerlink" title="使用BootStrap布局网站首页"></a>使用BootStrap布局网站首页</h4><h4 id="需求分析-6"><a href="#需求分析-6" class="headerlink" title="需求分析"></a>需求分析</h4><p>请使用BootStrap对我们的首页进行优化</p>
+<h4 id="技术分析-7"><a href="#技术分析-7" class="headerlink" title="技术分析"></a>技术分析</h4><h4 id="步骤分析-6"><a href="#步骤分析-6" class="headerlink" title="步骤分析"></a>步骤分析</h4><blockquote>
+<ol>
+<li>新建一个HTML页面.引入bootStrap相关的js和CSS</li>
+<li>定义一个整体的div, 将整体的div分成8个部分</li>
+<li>完成没部分的内容显示</li>
+</ol>
+</blockquote>
+<h4 id="代码实现-7"><a href="#代码实现-7" class="headerlink" title="代码实现"></a>代码实现</h4><pre><code class="html"><span class="meta">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="name">html</span>&gt;</span>
+
+    <span class="tag">&lt;<span class="name">head</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span>
+        <span class="comment">&lt;!--</span>
+<span class="comment">            准备工作:</span>
+<span class="comment">            &lt;meta name='viewport'&gt;</span>
+<span class="comment">            1.导入bootstrap css文件</span>
+<span class="comment">            2.导入JQuery</span>
+<span class="comment">            3.bootstrap.js</span>
+<span class="comment"></span>
+<span class="comment">            4.写一个div  class = container 支持响应式的布局容器</span>
+<span class="comment"></span>
+<span class="comment">        --&gt;</span>
+        <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"../css/bootstrap.min.css"</span>&gt;</span>
+
+        <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"viewport"</span> <span class="attr">content</span>=<span class="string">"width=device-width, initial-scale=1"</span>&gt;</span>
+
+        <span class="comment">&lt;!--</span>
+<span class="comment"></span>
+<span class="comment">        jQuery文件。务必在bootstrap.min.js 之前引入</span>
+<span class="comment">         --&gt;</span>
+        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../js/jquery-1.11.0.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+
+        <span class="comment">&lt;!-- 最新的 Bootstrap 核心 JavaScript 文件 --&gt;</span>
+        <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"../js/bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+
+    <span class="tag">&lt;/<span class="name">head</span>&gt;</span>
+
+    <span class="tag">&lt;<span class="name">body</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-4"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/logo2.png"</span> /&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-4 hidden-xs"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/header.png"</span> /&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-4"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>登录<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>注册<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>购物车<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+            <span class="comment">&lt;!--菜单--&gt;</span>
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-12"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"navbar navbar-inverse"</span> <span class="attr">role</span>=<span class="string">"navigation"</span>&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container-fluid"</span>&gt;</span>
+                            <span class="comment">&lt;!-- Brand and toggle get grouped for better mobile display --&gt;</span>
+                            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"navbar-header"</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"navbar-toggle collapsed"</span> <span class="attr">data-toggle</span>=<span class="string">"collapse"</span> <span class="attr">data-target</span>=<span class="string">"#bs-example-navbar-collapse-1"</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sr-only"</span>&gt;</span>Toggle navigation<span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"icon-bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+                              <span class="tag">&lt;/<span class="name">button</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"navbar-brand"</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>首页<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+                            <span class="comment">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+                            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"collapse navbar-collapse"</span> <span class="attr">id</span>=<span class="string">"bs-example-navbar-collapse-1"</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"nav navbar-nav"</span>&gt;</span>
+                                    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"active"</span>&gt;</span>
+                                        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>手机数码<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                    <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                    <span class="tag">&lt;<span class="name">li</span>&gt;</span>
+                                        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>鞋靴箱包<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                    <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                    <span class="tag">&lt;<span class="name">li</span>&gt;</span>
+                                        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>电脑办公<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                    <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                    <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"dropdown"</span>&gt;</span>
+                                        <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span> <span class="attr">class</span>=<span class="string">"dropdown-toggle"</span> <span class="attr">data-toggle</span>=<span class="string">"dropdown"</span>&gt;</span>所有分类 <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                        <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"dropdown-menu"</span> <span class="attr">role</span>=<span class="string">"menu"</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">li</span>&gt;</span>
+                                                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>手机数码<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                            <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">li</span>&gt;</span>
+                                                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>鞋靴箱包<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                            <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">li</span>&gt;</span>
+                                                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>电脑办公<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                            <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">li</span>&gt;</span>
+                                                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>Separated link<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                            <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">"divider"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                            <span class="tag">&lt;<span class="name">li</span>&gt;</span>
+                                                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;</span>One more separated link<span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+                                            <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                        <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+                                    <span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+                                <span class="tag">&lt;/<span class="name">ul</span>&gt;</span>
+                                <span class="tag">&lt;<span class="name">form</span> <span class="attr">class</span>=<span class="string">"navbar-form navbar-right"</span> <span class="attr">role</span>=<span class="string">"search"</span>&gt;</span>
+                                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"form-group"</span>&gt;</span>
+                                        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">class</span>=<span class="string">"form-control"</span> <span class="attr">placeholder</span>=<span class="string">"请输入要搜索的商品"</span>&gt;</span>
+                                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                                    <span class="tag">&lt;<span class="name">button</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">class</span>=<span class="string">"btn btn-default"</span>&gt;</span>搜索<span class="tag">&lt;/<span class="name">button</span>&gt;</span>
+                                <span class="tag">&lt;/<span class="name">form</span>&gt;</span>
+
+                            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                            <span class="comment">&lt;!-- /.navbar-collapse --&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!-- /.container-fluid --&gt;</span>
+                    <span class="tag">&lt;/<span class="name">nav</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"carousel-example-generic"</span> <span class="attr">class</span>=<span class="string">"carousel slide"</span> <span class="attr">data-ride</span>=<span class="string">"carousel"</span>&gt;</span>
+  <span class="comment">&lt;!-- Indicators --&gt;</span>
+  <span class="tag">&lt;<span class="name">ol</span> <span class="attr">class</span>=<span class="string">"carousel-indicators"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span> <span class="attr">data-target</span>=<span class="string">"#carousel-example-generic"</span> <span class="attr">data-slide-to</span>=<span class="string">"0"</span> <span class="attr">class</span>=<span class="string">"active"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span> <span class="attr">data-target</span>=<span class="string">"#carousel-example-generic"</span> <span class="attr">data-slide-to</span>=<span class="string">"1"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">li</span> <span class="attr">data-target</span>=<span class="string">"#carousel-example-generic"</span> <span class="attr">data-slide-to</span>=<span class="string">"2"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span>
+  <span class="tag">&lt;/<span class="name">ol</span>&gt;</span>
+
+  <span class="comment">&lt;!-- Wrapper for slides --&gt;</span>
+  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"carousel-inner"</span> <span class="attr">role</span>=<span class="string">"listbox"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item active"</span>&gt;</span>
+      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/1.jpg"</span> <span class="attr">alt</span>=<span class="string">"..."</span>&gt;</span>
+      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"carousel-caption"</span>&gt;</span>
+        ...
+      <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>
+      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/2.jpg"</span> <span class="attr">alt</span>=<span class="string">"..."</span>&gt;</span>
+      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"carousel-caption"</span>&gt;</span>
+        ...
+      <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span>
+      <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/3.jpg"</span> <span class="attr">alt</span>=<span class="string">"..."</span>&gt;</span>
+      <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"carousel-caption"</span>&gt;</span>
+        ...
+      <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+  <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+  <span class="comment">&lt;!-- Controls --&gt;</span>
+  <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"left carousel-control"</span> <span class="attr">href</span>=<span class="string">"#carousel-example-generic"</span> <span class="attr">role</span>=<span class="string">"button"</span> <span class="attr">data-slide</span>=<span class="string">"prev"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"glyphicon glyphicon-chevron-left"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sr-only"</span>&gt;</span>Previous<span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+  <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">"right carousel-control"</span> <span class="attr">href</span>=<span class="string">"#carousel-example-generic"</span> <span class="attr">role</span>=<span class="string">"button"</span> <span class="attr">data-slide</span>=<span class="string">"next"</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"glyphicon glyphicon-chevron-right"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"sr-only"</span>&gt;</span>Next<span class="tag">&lt;/<span class="name">span</span>&gt;</span>
+  <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+<span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+
+
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+            <span class="comment">&lt;!--最新商品这里--&gt;</span>
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-12"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>最新商品<span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../images/title2.jpg"</span>/&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+            <span class="comment">&lt;!--商品部分 --&gt;</span>
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                <span class="comment">&lt;!--左边div--&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 hidden-sm hidden-xs"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/big01.jpg"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"100%"</span> /&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="comment">&lt;!--右边div--&gt;</span>    
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-10"</span>&gt;</span>
+                    <span class="comment">&lt;!--上面部分--&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                        <span class="comment">&lt;!--中等广告图--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-6"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/middle01.jpg"</span> <span class="attr">width</span>=<span class="string">"100%"</span> /&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="comment">&lt;!--下面部分--&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-12"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/ad.jpg"</span> <span class="attr">width</span>=<span class="string">"100%"</span> /&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+
+
+
+            <span class="comment">&lt;!--最新商品这里--&gt;</span>
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-12"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">h3</span>&gt;</span>最新商品<span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../images/title2.jpg"</span>/&gt;</span><span class="tag">&lt;/<span class="name">h3</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+            <span class="comment">&lt;!--商品部分 --&gt;</span>
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                <span class="comment">&lt;!--左边div--&gt;</span>
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 hidden-sm hidden-xs"</span>&gt;</span>
+                    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/big01.jpg"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">height</span>=<span class="string">"100%"</span> /&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="comment">&lt;!--右边div--&gt;</span>    
+                <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-10"</span>&gt;</span>
+                    <span class="comment">&lt;!--上面部分--&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                        <span class="comment">&lt;!--中等广告图--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-6"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/middle01.jpg"</span> <span class="attr">width</span>=<span class="string">"100%"</span> /&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                    <span class="comment">&lt;!--下面部分--&gt;</span>
+                    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"row"</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                        <span class="comment">&lt;!--商品项--&gt;</span>
+                        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"col-md-2 col-xs-4"</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../products/hao/small01.jpg"</span> /&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>豆浆机<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                            <span class="tag">&lt;<span class="name">p</span>&gt;</span>$998<span class="tag">&lt;/<span class="name">p</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+                    <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+
+            <span class="comment">&lt;!--页脚广告--&gt;</span>
+            <span class="tag">&lt;<span class="name">div</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../image/footer.jpg"</span> <span class="attr">width</span>=<span class="string">"100%"</span> /&gt;</span>
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+            <span class="comment">&lt;!--网站声明--&gt;</span>
+            <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"text-align: center;"</span>&gt;</span>
+                <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>关于我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>联系我们<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>招贤纳士<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>法律声明<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>友情链接<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>支付方式<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>配送方式<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>服务声明<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"http://www.itheima.com"</span>&gt;</span>广告声明<span class="tag">&lt;/<span class="name">a</span>&gt;</span>    
+                    <span class="tag">&lt;<span class="name">br</span> /&gt;</span>
+                    Copyright © 2005-2016 传智商城 版权所有
+            <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+
+        <span class="tag">&lt;/<span class="name">div</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">body</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="name">html</span>&gt;</span>
+</code></pre>
+<h3 id="五天前端内容总结"><a href="#五天前端内容总结" class="headerlink" title="五天前端内容总结"></a>五天前端内容总结</h3><ul>
+<li>JQ方式校验表单(要求做出来)</li>
+<li>json :  (了解)<ul>
+<li>json对象 {}</li>
+<li>json数组 [{},{}]</li>
+</ul>
+</li>
+<li>$.get(url,function(data){}) (了解)</li>
+<li>bootstrap:  Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。<ul>
+<li>全局CSS样式: css样式<ul>
+<li>栅格系统:<ul>
+<li>将屏幕划分成12个格子,12列</li>
+<li>class=’row’ 当前是行</li>
+<li>行里面放的是列 col-屏幕分辨率-数字    (每一种分辨率后的数字总和必须是等于12,如果超过12,另起一行)</li>
+<li>col-lg-数字: 在超宽屏幕上使用</li>
+<li>col-md-数字: 在中等屏幕上,PC电脑</li>
+<li>col-sm-数字:  在平板电脑上</li>
+<li>col-xs-数字:  在手机上</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>组件:  导航条 , 进度条, 字体</li>
+<li>javascript插件 : 轮播图</li>
+<li>复制粘贴</li>
+</ul>
+</li>
+<li>什么是响应式: 会根据不同的分辨率去显示不同页面结构,提高用户体验</li>
+</ul>
+<ul>
+<li><p>HTML: 超文本标记语言: 设计网页,决定了网页的结构</p>
+</li>
+<li><p>CSS:  层叠样式表 ,主要是用来美化页面, 将美化和HTML代码进行分离,提高代码复用性</p>
+</li>
+<li><p>javascript: 脚本语言,由浏览器解释执行, 弱类型语言(var i), 提供用户交互</p>
+</li>
+<li><p>jquery:  javascript函数库,进一步的封装</p>
+<ul>
+<li><p>选择器:</p>
+<ul>
+<li>ID选择器</li>
+<li>类选择器</li>
+<li>元素选择器</li>
+<li>通配符选择器</li>
+<li>选择器分组</li>
+</ul>
+</li>
+<li><p>层级选择器</p>
+<ul>
+<li>后代选择器</li>
+<li>子元素选择器</li>
+<li>相邻兄弟选择器</li>
+<li>兄弟选择器 : 找出所有的弟弟</li>
+</ul>
+</li>
+<li><p>属性选择器:</p>
+<ul>
+<li>选择器[属性名称=’属性的值’]</li>
+</ul>
+</li>
+<li><p>表单选择器</p>
+<ul>
+<li>:input</li>
+<li>:text</li>
+<li>:password</li>
+</ul>
+<p>body &gt; div &gt; div:nth-child(7) &gt; div:nth-child(3) &gt; div:nth-child(8)</p>
+</li>
+<li><p>基本的过滤器</p>
+<ul>
+<li>:first</li>
+<li>:last</li>
+<li>:even</li>
+<li>:odd</li>
+<li>:gt</li>
+<li>:lt</li>
+<li>:eq</li>
+</ul>
+</li>
+<li><p>表单对象属性</p>
+<ul>
+<li>:selected</li>
+<li>:checked</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/03/27/中午学习总结/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-css与javascript" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -2098,57 +3280,6 @@ primary key(id)
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/03/20/第一天总结/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title: 我的第一篇文章<br>date: 2019-03-20 15:37:15</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>初记：</p>
-<pre><code>在经历了一天的测试之后hexo博客终于搭好了,希望自己能每天坚持记录自己学习的过程!
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/03/20/我的第一篇文章/">展开全文 >></a>
         </p>
       
 
